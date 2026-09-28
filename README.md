@@ -29,7 +29,7 @@ Hoje faço parte da **Unect Jr.** e da **G4tech**, e também contribuo no projet
 <td width="40%" align="center" valign="middle">
 
 <!-- GIF:START -->
-<img src="https://media.giphy.com/media/3BwNcKOTAVWBa/giphy.gif" width="100%" />
+<img src="https://gifdb.com/images/high/lucario-one-hand-aura-sphere-yqishz30rt70iwp1.gif" width="100%" />
 <!-- GIF:END -->
 
 </td>
