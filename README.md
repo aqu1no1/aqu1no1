@@ -66,8 +66,8 @@ At **G4tech**, I started as an intern and was promoted to junior full stack deve
 <img src="https://skillicons.dev/icons?i=ts,js,java,c,py&theme=dark" />
 
 <h4>Frameworks</h4>
-<img src="https://skillicons.dev/icons?i=react,nestjs&theme=dark" />
-<p>React, React Native e NestJS</p>
+<img src="https://skillicons.dev/icons?i=react,nodejs,express,nestjs&theme=dark" />
+<p>React, React Native, Node.js, Express e NestJS</p>
 
 <h4>Banco de dados</h4>
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb&theme=dark" />
