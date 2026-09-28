@@ -2,11 +2,15 @@ name: Trocar GIF do perfil
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # a cada 5 minutos (mínimo do GitHub) — só para teste
+    - cron: "*/5 * * * *"   # a cada 5 minutos (mínimo do GitHub; o horário não é garantido)
   workflow_dispatch:         # permite rodar na mão pela aba Actions
 
 permissions:
   contents: write
+
+concurrency:
+  group: trocar-gif
+  cancel-in-progress: false
 
 jobs:
   trocar:
@@ -42,4 +46,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           git diff --cached --quiet || git commit -m "Trocar GIF do perfil"
+          git pull --rebase origin main
           git push
