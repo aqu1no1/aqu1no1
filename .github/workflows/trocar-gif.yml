@@ -23,6 +23,8 @@ jobs:
               "https://gifdb.com/images/high/lucario-one-hand-aura-sphere-yqishz30rt70iwp1.gif",
               "https://gifdb.com/images/high/lucario-aura-sphere-power-charge-blast-bqhqu89ga08qsfj8.gif",
               "https://gifdb.com/images/high/killua-zoldyck-crying-blood-npjmg1s5lyyvzpnm.gif",
+              "https://gifdb.com/images/high/a-man-in-a-white-shirt-is-looking-at-a-ghost-nqp6cz4zr97g2do8.gif",
+              "https://gifdb.com/images/high/a-close-up-of-a-man-s-face-with-a-blue-earring-ucjg6f10j3pyhow2.gif",
           ]
           readme = open("README.md", encoding="utf-8").read()
           atual = re.search(r'<!-- GIF:START -->\s*<img src="([^"]+)"', readme)
