@@ -19,10 +19,10 @@ jobs:
           python3 - << 'PY'
           import re
           gifs = [
-              "https://media.giphy.com/media/3BwNcKOTAVWBa/giphy.gif",
-              "https://gifdb.com/images/high/lucario-one-hand-aura-sphere-yqishz30rt70iwp1.gif",
+              "assets/gifs/inicial.gif",
+              "assets/gifs/lucario-mao.gif",
               "assets/gifs/lucario-carga.gif",
-              "https://gifdb.com/images/high/killua-zoldyck-crying-blood-npjmg1s5lyyvzpnm.gif",
+              "assets/gifs/killua.gif",
               "assets/gifs/fantasma.gif",
               "assets/gifs/brinco-azul.gif",
           ]
