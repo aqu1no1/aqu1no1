@@ -60,9 +60,25 @@ At **G4tech**, I started as an intern and was promoted to junior full stack deve
 
 ### Stack
 
-<img src="https://skillicons.dev/icons?i=ts,js,html,css,react,nodejs,tailwind&theme=dark" />
-<br/><br/>
-<img src="https://skillicons.dev/icons?i=postgres,docker,git,github,vscode,figma&theme=dark" />
+<h4>Linguagens</h4>
+<img src="https://skillicons.dev/icons?i=ts,js,java,c,py&theme=dark" />
+
+<h4>Frameworks</h4>
+<img src="https://skillicons.dev/icons?i=react,nestjs&theme=dark" />
+<p>React, React Native e NestJS</p>
+
+<h4>Banco de dados</h4>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb&theme=dark" />
+
+<h4>Teste de API</h4>
+<img src="https://skillicons.dev/icons?i=postman&theme=dark" />
+<p>Postman e Bruno</p>
+
+<h4>DevOps e versionamento</h4>
+<img src="https://skillicons.dev/icons?i=azure,githubactions,git,github&theme=dark" />
+
+<h4>Sistema operacional</h4>
+<img src="https://skillicons.dev/icons?i=linux&theme=dark" />
 
 ---
 
@@ -71,12 +87,14 @@ At **G4tech**, I started as an intern and was promoted to junior full stack deve
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
+<img src="assets/unect.svg" width="70" height="70" alt="Unect Jr." />
 <h4>Unect Jr.</h4>
 <p><b>Assessor de Backend</b></p>
 <p>Participei do desenvolvimento de sistemas para clínicas, cuidando da API, das regras de negócio e do banco de dados. Gosto de me antecipar aos problemas e estou sempre disponível para ajudar o time.</p>
 <img src="https://skillicons.dev/icons?i=nestjs,ts,postgres,docker&theme=dark" />
 </td>
 <td width="50%" align="center" valign="top">
+<img src="assets/g4tech.svg" width="70" height="70" alt="G4tech" />
 <h4>G4tech</h4>
 <p><b>Desenvolvedor Júnior Full Stack</b></p>
 <p>Entrei como estagiário e fui efetivado como desenvolvedor júnior. Trabalhei em projetos web e mobile, e também no backend, desde a criação das interfaces até a integração com as APIs.</p>
