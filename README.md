@@ -28,7 +28,9 @@ Hoje faço parte da **Unect Jr.** e da **G4tech**, e também contribuo no projet
 </td>
 <td width="40%" align="center" valign="middle">
 
+<!-- GIF:START -->
 <img src="https://media.giphy.com/media/3BwNcKOTAVWBa/giphy.gif" width="100%" />
+<!-- GIF:END -->
 
 </td>
 </tr>

@@ -1,0 +1,43 @@
+name: Trocar GIF do perfil
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # a cada 6 horas
+  workflow_dispatch:         # permite rodar na mão pela aba Actions
+
+permissions:
+  contents: write
+
+jobs:
+  trocar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Escolher o próximo GIF
+        run: |
+          python3 - << 'PY'
+          import re
+          gifs = [
+              "https://media.giphy.com/media/3BwNcKOTAVWBa/giphy.gif",
+              "https://gifdb.com/images/high/lucario-one-hand-aura-sphere-yqishz30rt70iwp1.gif",
+              "https://gifdb.com/images/high/lucario-aura-sphere-power-charge-blast-bqhqu89ga08qsfj8.gif",
+              "https://gifdb.com/images/high/killua-zoldyck-crying-blood-npjmg1s5lyyvzpnm.gif",
+          ]
+          readme = open("README.md", encoding="utf-8").read()
+          atual = re.search(r'<!-- GIF:START -->\s*<img src="([^"]+)"', readme)
+          indice = gifs.index(atual.group(1)) if atual and atual.group(1) in gifs else -1
+          proximo = gifs[(indice + 1) % len(gifs)]
+          bloco = f'<!-- GIF:START -->\n<img src="{proximo}" width="100%" />\n<!-- GIF:END -->'
+          readme = re.sub(r'<!-- GIF:START -->.*?<!-- GIF:END -->', bloco, readme, flags=re.S)
+          open("README.md", "w", encoding="utf-8").write(readme)
+          print("GIF atual:", proximo)
+          PY
+
+      - name: Salvar a troca
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Trocar GIF do perfil"
+          git push
