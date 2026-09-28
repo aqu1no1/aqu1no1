@@ -63,7 +63,7 @@ At **G4tech**, I started as an intern and was promoted to junior full stack deve
 ### Stack
 
 <h4>Linguagens</h4>
-<img src="https://skillicons.dev/icons?i=ts,js,java,c,py&theme=dark" />
+<img src="https://skillicons.dev/icons?i=ts,js,html,css,java,c,py&theme=dark" />
 
 <h4>Frameworks</h4>
 <img src="https://skillicons.dev/icons?i=react,nodejs,express,nestjs&theme=dark" />
