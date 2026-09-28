@@ -79,8 +79,8 @@ At **G4tech**, I started as an intern and was promoted to junior full stack deve
 <h4>DevOps e versionamento</h4>
 <img src="https://skillicons.dev/icons?i=azure,githubactions,git,github&theme=dark" />
 
-<h4>Sistema operacional</h4>
-<img src="https://skillicons.dev/icons?i=linux&theme=dark" />
+<h4>Sistemas operacionais</h4>
+<img src="https://skillicons.dev/icons?i=linux,apple,windows&theme=dark" />
 
 ---
 
