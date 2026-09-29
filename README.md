@@ -73,7 +73,7 @@ At **G4tech**, I started as an intern and was promoted to junior full stack deve
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb&theme=dark" />
 
 <h4>Teste de API</h4>
-<img src="https://skillicons.dev/icons?i=postman&theme=dark" />
+<img src="assets/api.svg" alt="Postman e Bruno" />
 <p>Postman e Bruno</p>
 
 <h4>DevOps e versionamento</h4>
