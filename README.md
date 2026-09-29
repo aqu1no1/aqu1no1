@@ -111,6 +111,8 @@ At **G4tech**, I started as an intern and was promoted to junior full stack deve
 
 <img src="https://streak-stats.demolab.com?user=aqu1no1&background=0D1117&border=30363D&stroke=30363D&ring=1E40AF&fire=1E40AF&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681&locale=pt_BR" />
 
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aqu1no1&theme=github_dark" />
+
 </div>
 
 <br/><br/><br/>
