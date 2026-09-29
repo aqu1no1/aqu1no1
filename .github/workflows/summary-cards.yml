@@ -1,0 +1,42 @@
+name: Atualizar cards de estatísticas
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # todo dia às 03:00 (horário de Brasília)
+  workflow_dispatch:       # permite rodar na mão pela aba Actions
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/summary-cards.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: summary-cards
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gerar os cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          UTC_OFFSET: -3
+          THEME: github_dark
+          AUTO_PUSH: false
+
+      - name: Salvar os cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-summary-card-output
+          git diff --cached --quiet || git commit -m "Atualizar cards de estatísticas"
+          git pull --rebase origin main
+          git push
