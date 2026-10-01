@@ -87,8 +87,9 @@ Hi, I'm Mauricio. 👋
 ### <img src="https://media.giphy.com/media/K2QJEiQazftepF0uDU/giphy.gif" width="28" /> Tech Stack
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=ts,js,react,nodejs,nestjs,express,postgres,mysql,mongodb,azure,githubactions,git,github,linux&perline=14&theme=dark" />
+<img src="https://skillicons.dev/icons?i=ts,js,react,nodejs,nestjs,express,postgres,mysql,mongodb,prisma,azure,githubactions,git,github,linux&perline=15&theme=dark" />
 <img src="assets/expo.svg" width="48" alt="Expo" />
+<img src="assets/typeorm.svg" width="48" alt="TypeORM" />
 </div>
 
 <details>
@@ -107,6 +108,11 @@ Hi, I'm Mauricio. 👋
 
 <h4>Databases</h4>
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb&theme=dark" />
+
+<h4>ORMs</h4>
+<img src="https://skillicons.dev/icons?i=prisma&theme=dark" />
+<img src="assets/typeorm.svg" width="48" alt="TypeORM" />
+<p>Prisma and TypeORM</p>
 
 <h4>API Testing</h4>
 <img src="assets/api.svg" alt="Postman and Bruno" />
