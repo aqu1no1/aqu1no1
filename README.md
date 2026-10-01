@@ -22,7 +22,7 @@
 
 Hi, I'm Mauricio. 👋
 
-- 6th-semester **Software Engineering** student at <img src="assets/utfpr.svg" height="14" alt="UTFPR" /> **UTFPR** (Cornélio Procópio campus).
+- <img src="assets/utfpr.svg" height="14" alt="UTFPR" /> 6th-semester **Software Engineering** student at **UTFPR** (Cornélio Procópio campus).
 - **Full stack** developer, mostly working with **TypeScript**.
 - I enjoy following a project all the way from the database to the screen.
 - Currently at **Unect Jr.** and **G4tech**, and contributing to the **TEDI** project (web app, API and documentation).
@@ -40,6 +40,7 @@ Hi, I'm Mauricio. 👋
 
 ### <img src="https://media.giphy.com/media/K2QJEiQazftepF0uDU/giphy.gif" width="28" /> Education
 
+<div align="center">
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
@@ -56,6 +57,7 @@ Hi, I'm Mauricio. 👋
 </td>
 </tr>
 </table>
+</div>
 
 ---
 
