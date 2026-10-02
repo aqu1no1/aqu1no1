@@ -6,7 +6,11 @@
 
 <br/>
 
-<a href="https://www.linkedin.com/in/mauricio-aquino-b426a9265/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF" /></a>
+<img src="https://media.giphy.com/media/MszCRIaNuRVJkt6dso/giphy.gif" width="400" alt="Chrollo Lucilfer" />
+
+<br/>
+
+<a href="https://www.linkedin.com/in/aqu1nodev/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF" /></a>
 <a href="mailto:aquinomauricio101@gmail.com"><img src="https://img.shields.io/badge/Gmail-0D1117?style=for-the-badge&logo=gmail&logoColor=58A6FF" /></a>
 <a href="https://YOUR-PORTFOLIO-URL" target="_blank"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=58A6FF" /></a>
 
@@ -14,31 +18,22 @@
 
 ---
 
-<table>
-<tr>
-<td width="60%" valign="top">
+<div align="center">
 
-### <img src="https://media.giphy.com/media/K2QJEiQazftepF0uDU/giphy.gif" width="28" /> About me
+<h3>About me</h3>
 
-Hi, I'm Mauricio. 👋
+<p>Hi, I'm Mauricio.</p>
 
-- <img src="assets/utfpr.svg" height="14" alt="UTFPR" /> 6th-semester **Software Engineering** student at **UTFPR** (Cornélio Procópio campus).
-- **Full stack** developer, mostly working with **TypeScript**.
-- I enjoy following a project all the way from the database to the screen.
-- Currently at **Unect Jr.** and **G4tech**, and contributing to the **TEDI** project (web app, API and documentation).
+<p><img src="assets/utfpr.svg" height="14" alt="UTFPR" /> 6th-semester <b>Software Engineering</b> student at <b>UTFPR</b> (Cornélio Procópio campus).</p>
+<p><b>Full stack</b> developer, mostly working with <b>TypeScript</b>.</p>
+<p>I enjoy following a project all the way from the database to the screen.</p>
+<p>Currently at <b>Unect Jr.</b> and <b>G4tech</b>, and contributing to the <b>TEDI</b> project (web app, API and documentation).</p>
 
-</td>
-<td width="40%" align="center" valign="middle">
-
-<img src="https://media.giphy.com/media/MszCRIaNuRVJkt6dso/giphy.gif" width="100%" alt="Chrollo Lucilfer" />
-
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
-### <img src="https://media.giphy.com/media/K2QJEiQazftepF0uDU/giphy.gif" width="28" /> Education
+### <img src="assets/gif-azul.gif" width="28" /> Education
 
 <div align="center">
 <table>
@@ -61,7 +56,7 @@ Hi, I'm Mauricio. 👋
 
 ---
 
-### <img src="https://media.giphy.com/media/K2QJEiQazftepF0uDU/giphy.gif" width="28" /> Experience
+### <img src="assets/gif-azul.gif" width="28" /> Experience
 
 <table>
 <tr>
@@ -84,16 +79,17 @@ Hi, I'm Mauricio. 👋
 
 ---
 
-### <img src="https://media.giphy.com/media/K2QJEiQazftepF0uDU/giphy.gif" width="28" /> Tech Stack
+### <img src="assets/gif-azul.gif" width="28" /> Tech Stack
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=ts,js,react,nodejs,nestjs,express,postgres,mysql,mongodb,prisma,azure,githubactions,git,github,linux&perline=15&theme=dark" />
+<img src="https://skillicons.dev/icons?i=ts,js,react,nodejs,nestjs,express,postgres,mysql,mongodb,prisma,azure,githubactions,git,github,linux,notion&perline=16&theme=dark" />
 <img src="assets/expo.svg" width="48" alt="Expo" />
 <img src="assets/typeorm.svg" width="48" alt="TypeORM" />
+<img src="assets/linear.svg" width="48" alt="Linear" />
 </div>
 
 <details>
-<summary><b>See full stack</b></summary>
+<summary><img src="assets/see-full-stack.svg" height="20" alt="See full stack" /></summary>
 <br/>
 
 <div align="center">
@@ -118,6 +114,11 @@ Hi, I'm Mauricio. 👋
 <img src="assets/api.svg" alt="Postman and Bruno" />
 <p>Postman and Bruno</p>
 
+<h4>Documentation</h4>
+<img src="https://skillicons.dev/icons?i=notion&theme=dark" />
+<img src="assets/linear.svg" width="48" alt="Linear" />
+<p>Notion and Linear</p>
+
 <h4>DevOps & Version Control</h4>
 <img src="https://skillicons.dev/icons?i=azure,githubactions,git,github&theme=dark" />
 
@@ -130,7 +131,7 @@ Hi, I'm Mauricio. 👋
 
 ---
 
-### <img src="https://media.giphy.com/media/K2QJEiQazftepF0uDU/giphy.gif" width="28" /> GitHub Stats
+### <img src="assets/gif-azul.gif" width="28" /> GitHub Stats
 
 <div align="center">
 
