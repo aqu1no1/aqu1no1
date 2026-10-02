@@ -18,18 +18,14 @@
 
 ---
 
-<div align="center">
+### <img src="assets/gif-azul.gif" width="28" /> About me
 
-<h3>About me</h3>
+Hi, I'm Mauricio.
 
-<p>Hi, I'm Mauricio.</p>
-
-<p><img src="assets/utfpr.svg" height="14" alt="UTFPR" /> 6th-semester <b>Software Engineering</b> student at <b>UTFPR</b> (Cornélio Procópio campus).</p>
-<p><b>Full stack</b> developer, mostly working with <b>TypeScript</b>.</p>
-<p>I enjoy following a project all the way from the database to the screen.</p>
-<p>Currently at <b>Unect Jr.</b> and <b>G4tech</b>, and contributing to the <b>TEDI</b> project (web app, API and documentation).</p>
-
-</div>
+- 6th-semester **Software Engineering** student at **UTFPR** (Cornélio Procópio campus).
+- **Full stack** developer, mostly working with **TypeScript**.
+- I enjoy following a project all the way from the database to the screen.
+- Currently at **Unect Jr.** and **G4tech**, and contributing to the **TEDI** project (web app, API and documentation).
 
 ---
 
@@ -89,7 +85,7 @@
 </div>
 
 <details>
-<summary><img src="assets/see-full-stack.svg" height="20" alt="See full stack" /></summary>
+<summary><b>See full stack</b></summary>
 <br/>
 
 <div align="center">
