@@ -6,7 +6,7 @@
 
 <br/>
 
-<img src="https://media.giphy.com/media/MszCRIaNuRVJkt6dso/giphy.gif" width="400" alt="Chrollo Lucilfer" />
+<img src="https://media.giphy.com/media/nbB1CV1fazlGo/giphy.gif" width="400" alt="Hunter x Hunter" />
 
 <br/>
 
