@@ -5,7 +5,6 @@ on:
     - cron: "15 6 * * *"   # todo dia às 03:15 (horário de Brasília)
   workflow_dispatch:         # permite rodar na mão pela aba Actions
   push:
-    branches: [main]
     paths:
       - projects.json
       - scripts/update-projects.mjs
@@ -41,5 +40,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           git diff --cached --quiet || git commit -m "Atualizar projetos do README"
-          git pull --rebase origin main
+          git pull --rebase origin ${{ github.ref_name }}
           git push
