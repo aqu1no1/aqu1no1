@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=soft&color=0:000000,65:020617,100:0b1d51&height=180&section=header&text=Mauricio%20Aquino&fontSize=52&fontColor=58a6ff&fontAlignY=45" />
+<img width="100%" src="assets/header.svg" alt="Mauricio Aquino — Software Engineer · Full Stack Developer" />
 
 <div align="center">
 
@@ -50,6 +50,25 @@ Hi, I'm Mauricio.
 </table>
 </div>
 
+<details>
+<summary><b>See earlier education</b></summary>
+<br/>
+
+<div align="center">
+<table>
+<tr>
+<td align="center" valign="top">
+<img src="assets/neusa.png" height="90" alt="E.E. Profª Neusa Figueiredo Marçal" />
+<h4>E.E. Profª Neusa Figueiredo Marçal</h4>
+<p><b>Elementary and High School</b></p>
+<p>São Bernardo do Campo, SP</p>
+</td>
+</tr>
+</table>
+</div>
+
+</details>
+
 ---
 
 ### <img src="assets/gif-azul.gif" width="28" /> Experience
@@ -75,15 +94,45 @@ Hi, I'm Mauricio.
 
 ---
 
+### <img src="assets/gif-azul.gif" width="28" /> Projects
+
+<!-- Gerado automaticamente por .github/workflows/projects.yml a partir de projects.json -->
+<div align="center">
+<!-- PROJECTS:START -->
+<!-- PROJECTS:END -->
+</div>
+
+---
+
 ### <img src="assets/gif-azul.gif" width="28" /> Tech Stack
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=ts,js,react,nodejs,nestjs,express,postgres,mysql,mongodb,prisma,azure,githubactions,git,github,linux,notion&perline=16&theme=dark" />
-<img src="assets/expo.svg" width="48" alt="Expo" />
-<img src="assets/typeorm.svg" width="48" alt="TypeORM" />
+<img src="https://skillicons.dev/icons?i=ts&theme=dark" width="48" alt="ts" />&nbsp;
+<img src="https://skillicons.dev/icons?i=js&theme=dark" width="48" alt="js" />&nbsp;
+<img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" alt="react" />&nbsp;
+<img src="assets/expo.svg" width="48" alt="Expo" />&nbsp;
+<img src="https://skillicons.dev/icons?i=nodejs&theme=dark" width="48" alt="nodejs" />&nbsp;
+<img src="https://skillicons.dev/icons?i=nestjs&theme=dark" width="48" alt="nestjs" />&nbsp;
+<img src="https://skillicons.dev/icons?i=express&theme=dark" width="48" alt="express" />&nbsp;
+<img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="48" alt="postgres" />&nbsp;
+<img src="https://skillicons.dev/icons?i=mysql&theme=dark" width="48" alt="mysql" />&nbsp;
+<img src="https://skillicons.dev/icons?i=mongodb&theme=dark" width="48" alt="mongodb" />
+<br/>
+<img src="https://skillicons.dev/icons?i=prisma&theme=dark" width="48" alt="prisma" />&nbsp;
+<img src="assets/typeorm.svg" width="48" alt="TypeORM" />&nbsp;
+<img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" alt="docker" />&nbsp;
+<img src="https://skillicons.dev/icons?i=azure&theme=dark" width="48" alt="azure" />&nbsp;
+<img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="48" alt="githubactions" />&nbsp;
+<img src="https://skillicons.dev/icons?i=git&theme=dark" width="48" alt="git" />&nbsp;
+<img src="https://skillicons.dev/icons?i=github&theme=dark" width="48" alt="github" />&nbsp;
+<img src="https://skillicons.dev/icons?i=linux&theme=dark" width="48" alt="linux" />&nbsp;
+<img src="https://skillicons.dev/icons?i=notion&theme=dark" width="48" alt="notion" />&nbsp;
 <img src="assets/linear.svg" width="48" alt="Linear" />
 </div>
 
+<br/>
+
+<div align="center">
 <details>
 <summary><b>See full stack</b></summary>
 <br/>
@@ -124,6 +173,7 @@ Hi, I'm Mauricio.
 </div>
 
 </details>
+</div>
 
 ---
 
@@ -133,10 +183,13 @@ Hi, I'm Mauricio.
 
 <img src="https://streak-stats.demolab.com?user=aqu1no1&background=0D1117&border=30363D&stroke=30363D&ring=1E40AF&fire=1E40AF&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681&locale=en" />
 
-<img src="profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub contributions" />
+<img src="profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub contributions" width="100%" />
+
+<img src="profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages by repo" width="49%" />
+<img src="profile-summary-card-output/github_dark/3-stats.svg" alt="GitHub stats" width="49%" />
 
 </div>
 
 <br/><br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=soft&color=0:0b1d51,35:020617,100:000000&height=100&section=footer" />
+<img width="100%" src="assets/footer.svg" alt="" />

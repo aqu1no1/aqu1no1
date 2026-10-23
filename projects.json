@@ -1,0 +1,17 @@
+{
+  "user": "aqu1no1",
+  "limit": 4,
+  "repos": [],
+  "_como_usar": "Deixe 'repos' vazio para pegar automaticamente seus repositórios com push mais recente. Ou liste os projetos que quer mostrar, como nos exemplos abaixo (copie para dentro de 'repos'). Só 'repo' é obrigatório; o resto sobrescreve o que vem do GitHub.",
+  "_exemplos": [
+    "aqu1no1/meu-projeto",
+    {
+      "repo": "organizacao/tedi-api",
+      "name": "TEDI · API",
+      "role": "Backend",
+      "description": "API do projeto TEDI.",
+      "tags": ["extensão", "utfpr"],
+      "tech": ["nestjs", "postgres", "docker"]
+    }
+  ]
+}
