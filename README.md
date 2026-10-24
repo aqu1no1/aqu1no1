@@ -102,18 +102,18 @@ Hi, I'm Mauricio.
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/dotnet-task-manager-api">dotnet-task-manager-api</a></h4>
-<p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
-
-<img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated today</sub></p>
-</td>
-<td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/database-backup-utility">database-backup-utility</a></h4>
 <p>A cross-platform database backup and restore utility built with Rust, featuring a CLI, Tauri desktop app, automated scheduling, compression, and local/cloud storage support.</p>
 <p><img src="https://img.shields.io/badge/rust-1E40AF?style=flat-square" alt="rust" /></p>
 <img src="https://skillicons.dev/icons?i=rust,angular&theme=dark" height="32" />
 <p><sub>updated today</sub></p>
+</td>
+<td width="50%" align="center" valign="top">
+<h4><a href="https://github.com/aqu1no1/dotnet-task-manager-api">dotnet-task-manager-api</a></h4>
+<p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
+
+<img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
+<p><sub>updated yesterday</sub></p>
 </td>
 </tr>
 <tr>
@@ -122,14 +122,14 @@ Hi, I'm Mauricio.
 <p>Task management web application built with Angular and TypeScript, featuring task tracking, priorities, and status management.</p>
 
 
-<p><sub>updated today</sub></p>
+<p><sub>updated yesterday</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/nest-url-shortener">nest-url-shortener</a></h4>
 <p>A URL shortening REST API built with NestJS, Prisma, and PostgreSQL, featuring database migrations, automated testing, and CI/CD.</p>
 <p><img src="https://img.shields.io/badge/backend-1E40AF?style=flat-square" alt="backend" /> <img src="https://img.shields.io/badge/nestjs--backend-1E40AF?style=flat-square" alt="nestjs-backend" /> <img src="https://img.shields.io/badge/prisma--orm-1E40AF?style=flat-square" alt="prisma-orm" /></p>
 <img src="https://skillicons.dev/icons?i=ts,js&theme=dark" height="32" />
-<p><sub>updated 2 days ago</sub></p>
+<p><sub>updated 3 days ago</sub></p>
 </td>
 </tr>
 </table>
