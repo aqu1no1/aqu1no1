@@ -113,7 +113,7 @@ Hi, I'm Mauricio.
 <p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
 
 <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 2 days ago</sub></p>
+<p><sub>updated 3 days ago</sub></p>
 </td>
 </tr>
 <tr>
@@ -122,14 +122,14 @@ Hi, I'm Mauricio.
 <p>Task management web application built with Angular and TypeScript, featuring task tracking, priorities, and status management.</p>
 
 
-<p><sub>updated 2 days ago</sub></p>
+<p><sub>updated 4 days ago</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/nest-url-shortener">nest-url-shortener</a></h4>
 <p>A URL shortening REST API built with NestJS, Prisma, and PostgreSQL, featuring database migrations, automated testing, and CI/CD.</p>
 <p><img src="https://img.shields.io/badge/backend-1E40AF?style=flat-square" alt="backend" /> <img src="https://img.shields.io/badge/nestjs--backend-1E40AF?style=flat-square" alt="nestjs-backend" /> <img src="https://img.shields.io/badge/prisma--orm-1E40AF?style=flat-square" alt="prisma-orm" /></p>
 <img src="https://skillicons.dev/icons?i=ts,js&theme=dark" height="32" />
-<p><sub>updated 4 days ago</sub></p>
+<p><sub>updated 5 days ago</sub></p>
 </td>
 </tr>
 </table>
