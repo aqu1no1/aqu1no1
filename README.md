@@ -102,34 +102,34 @@ Hi, I'm Mauricio.
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/database-backup-utility">database-backup-utility</a></h4>
-<p>A cross-platform database backup and restore utility built with Rust, featuring a CLI, Tauri desktop app, automated scheduling, compression, and local/cloud storage support.</p>
-<p><img src="https://img.shields.io/badge/rust-1E40AF?style=flat-square" alt="rust" /></p>
-<img src="https://skillicons.dev/icons?i=rust,angular&theme=dark" height="32" />
-<p><sub>updated 2 days ago</sub></p>
-</td>
-<td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/dotnet-task-manager-api">dotnet-task-manager-api</a></h4>
 <p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
 
 <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 5 days ago</sub></p>
+<p><sub>updated today</sub></p>
+</td>
+<td width="50%" align="center" valign="top">
+<h4><a href="https://github.com/aqu1no1/database-backup-utility">database-backup-utility</a></h4>
+<p>A cross-platform database backup and restore utility built with Rust, featuring a CLI, Tauri desktop app, automated scheduling, compression, and local/cloud storage support.</p>
+<p><img src="https://img.shields.io/badge/rust-1E40AF?style=flat-square" alt="rust" /></p>
+<img src="https://skillicons.dev/icons?i=rust,angular&theme=dark" height="32" />
+<p><sub>updated today</sub></p>
 </td>
 </tr>
 <tr>
 <td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/angular-task-manager-web">angular-task-manager-web</a></h4>
-<p>Task management web application built with Angular and TypeScript, featuring task tracking, priorities, and status management.</p>
-
-
-<p><sub>updated 6 days ago</sub></p>
+<h4><a href="https://github.com/aqu1no1/currency-converter-web">currency-converter-web</a></h4>
+<p>Web app for currency conversion with historical rate charts, powered by the currency-converter-api. Built with React, Vite and TanStack Query.</p>
+<p><img src="https://img.shields.io/badge/apexcharts-1E40AF?style=flat-square" alt="apexcharts" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /> <img src="https://img.shields.io/badge/frontend-1E40AF?style=flat-square" alt="frontend" /> <img src="https://img.shields.io/badge/i18next-1E40AF?style=flat-square" alt="i18next" /> <img src="https://img.shields.io/badge/tanstack--query-1E40AF?style=flat-square" alt="tanstack-query" /> <img src="https://img.shields.io/badge/typescript-1E40AF?style=flat-square" alt="typescript" /> <img src="https://img.shields.io/badge/vitest-1E40AF?style=flat-square" alt="vitest" /> <img src="https://img.shields.io/badge/zod-1E40AF?style=flat-square" alt="zod" /></p>
+<img src="https://skillicons.dev/icons?i=ts,css,html,react,tailwind,vite&theme=dark" height="32" />
+<p><sub>updated today</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/nest-url-shortener">nest-url-shortener</a></h4>
-<p>A URL shortening REST API built with NestJS, Prisma, and PostgreSQL, featuring database migrations, automated testing, and CI/CD.</p>
-<p><img src="https://img.shields.io/badge/backend-1E40AF?style=flat-square" alt="backend" /> <img src="https://img.shields.io/badge/nestjs--backend-1E40AF?style=flat-square" alt="nestjs-backend" /> <img src="https://img.shields.io/badge/prisma--orm-1E40AF?style=flat-square" alt="prisma-orm" /></p>
-<img src="https://skillicons.dev/icons?i=ts,js&theme=dark" height="32" />
-<p><sub>updated 7 days ago</sub></p>
+<h4><a href="https://github.com/aqu1no1/currency-converter-app">currency-converter-app</a></h4>
+<p>Mobile app for currency conversion with historical rate charts and offline cache, powered by the currency-converter-api. Built with React Native and Expo.</p>
+<p><img src="https://img.shields.io/badge/android-1E40AF?style=flat-square" alt="android" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /> <img src="https://img.shields.io/badge/expo-1E40AF?style=flat-square" alt="expo" /> <img src="https://img.shields.io/badge/expo--router-1E40AF?style=flat-square" alt="expo-router" /> <img src="https://img.shields.io/badge/i18next-1E40AF?style=flat-square" alt="i18next" /> <img src="https://img.shields.io/badge/ios-1E40AF?style=flat-square" alt="ios" /> <img src="https://img.shields.io/badge/mobile--app-1E40AF?style=flat-square" alt="mobile-app" /> <img src="https://img.shields.io/badge/tanstack--query-1E40AF?style=flat-square" alt="tanstack-query" /> <img src="https://img.shields.io/badge/typescript-1E40AF?style=flat-square" alt="typescript" /></p>
+<img src="https://skillicons.dev/icons?i=ts,js,jest,react&theme=dark" height="32" />
+<p><sub>updated today</sub></p>
 </td>
 </tr>
 </table>
