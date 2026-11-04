@@ -42,7 +42,8 @@ Resumo do que foi decidido para o `aqu1no1/aqu1no1` (branch `readme-v3`, criada 
 
 ## GIFs (sem pipeline)
 
-- **Pasta de origem:** os GIFs ficam em `assets/gifs/`, numerados para definir a ordem: `01-chrollo.gif`, `02-....gif`.
+- **Pasta de origem:** os GIFs ficam em `assets/gifs/`, numerados para definir a ordem.
+- **Lista:** os 17 GIFs escolhidos (Zoro, Luffy, Shanks, Hiei, Killua, Barba Negra, LeBron, Ja Morant…) estão em `assets/gifs/sources.txt`. O `scripts/fetch-gifs.sh` baixa todos do Giphy.
 - **Script local:** o `scripts/build-gifs.sh` junta todos num único **`assets/hero.gif`**:
   - **10 s por GIF**, em loop infinito;
   - um GIF mais curto repete até completar os 10 s, e um mais longo é cortado;
@@ -61,11 +62,12 @@ aqu1no1/
 │   ├── banners/                   ← header.svg, footer.svg
 │   ├── logos/                     ← utfpr, etec, neusa, unect, g4tech
 │   ├── icons/                     ← section.gif (antigo gif-azul.gif), expo, typeorm, linear, api, os
-│   ├── gifs/                      ← GIFs de origem (você coloca aqui)
+│   ├── gifs/                      ← sources.txt + GIFs de origem
 │   └── hero.gif                   ← gerado pelo build-gifs.sh
 ├── scripts/
 │   ├── update-projects.mjs        ← usado pelo CI
-│   └── build-gifs.sh              ← rodado por você
+│   ├── fetch-gifs.sh              ← baixa os GIFs do sources.txt (rodado por você)
+│   └── build-gifs.sh              ← gera o hero.gif (rodado por você)
 ├── docs/                          ← decisoes.md, plano-readme.md
 ├── profile-summary-card-output/   ← gerado pelo summary-cards (não mexer)
 └── .github/workflows/             ← summary-cards.yml, projects.yml
@@ -75,7 +77,7 @@ aqu1no1/
 
 ## Pendências
 
-- [ ] Anexar os GIFs em `assets/gifs/` e rodar `./scripts/build-gifs.sh`.
+- [ ] Rodar `./scripts/fetch-gifs.sh` e depois `./scripts/build-gifs.sh`. Ver se o `hero.gif` ficou abaixo de ~10 MB; se não, reduzir a qualidade ou a quantidade de GIFs.
 - [ ] Trocar a linha do Giphy no README pela de `assets/hero.gif`.
 - [ ] Marcar os projetos finalizados: arquive o repo ou adicione o tópico `finished`, ou liste-os em `projects.json → finished`.
 - [ ] Trocar o link do badge **Portfolio** (`https://YOUR-PORTFOLIO-URL`).

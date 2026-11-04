@@ -1,0 +1,20 @@
+# Lista de GIFs da rotação do README (ordem = ordem de exibição).
+# Formato: nome  link-do-giphy
+# Rode ./scripts/fetch-gifs.sh para baixar e depois ./scripts/build-gifs.sh para gerar o hero.gif.
+01-zoro        https://giphy.com/gifs/op-onepiece-zorro-XHM5qC18iKztUyioMD
+02-one-piece   https://giphy.com/gifs/one-piece-C3brYLms1bhv2
+03-hiei        https://giphy.com/gifs/yu-hakusho-hiei-vTiSJ7cFoweoo
+04-hxh         https://giphy.com/gifs/hunter-x-hxh-ijsYTyxaMzZh6
+05-killua      https://giphy.com/gifs/killua-8DTnuPhxv0m4w
+06-zoro-king   https://giphy.com/gifs/zoro-vs-king-aura-fights-and-queen-ToIjkAXTPVPlfyi19B
+07-luffy-king  https://giphy.com/gifs/one-piece-edit-the-pirate-king-luffy-DwZ392mpIdkvrvTnjm
+08-shanks      https://giphy.com/gifs/one-piece-shanks-red-hair-htnfjofp8jH76bDZFL
+09-shanks-2    https://giphy.com/gifs/mohammad515-one-piece-shanks-absolute-6LSbOyt4SBfroYnrRM
+10-zoro-aura   https://giphy.com/gifs/zoros-power-saving-zorro-aura-TjFUxbRz3cgfbHmQxs
+11-gear-5      https://giphy.com/gifs/2-gear-5-joyboy-mI20aV94zVHkDKlgAR
+12-joy-boy     https://giphy.com/gifs/anime-monkey-d-luffy-joy-boy-Muqc4t03A8sz4ksa5i
+13-blackbeard  https://giphy.com/gifs/aura-riley-black-beard-vs-rayleigh-9rmHEV1GkkHqBbrSdY
+14-lebron-chalk https://giphy.com/gifs/RespectiveCollective-lebron-le-goat-chalk-toss-iYC8AvwIvYq9zmd0hX
+15-nba          https://giphy.com/gifs/26vUGuV1WxhbkEKZy
+16-ja-morant    https://giphy.com/gifs/nba-12-memphis-grizzlies-ja-morant-mWOhSN7Lmfj91LxHvG
+17-lebron-kyrie https://giphy.com/gifs/nba-lebron-james-cleveland-cavaliers-kyrie-irving-xTiTni5jF3Wtw3SaFG

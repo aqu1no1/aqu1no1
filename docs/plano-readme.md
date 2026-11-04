@@ -35,6 +35,7 @@ O que muda em relação à `readme-v2`:
 | `projects.json` | Formato novo, com as listas `current` e `finished` |
 | `scripts/update-projects.mjs` | Gera as duas seções, limita a 3 tags por card e transforma tópicos como `typescript` e `vite` em ícones |
 | `scripts/build-gifs.sh` | Novo: junta os GIFs de `assets/gifs/` em `assets/hero.gif` |
+| `scripts/fetch-gifs.sh` + `assets/gifs/sources.txt` | Novo: baixa do Giphy os GIFs listados |
 | `.github/workflows/*` | Sem mudanças |
 
 ## 3. GIFs (rotação de 10 s, sem pipeline)
@@ -43,11 +44,11 @@ O que muda em relação à `readme-v2`:
    - Linux: `sudo apt install ffmpeg`
    - macOS: `brew install ffmpeg`
    - Windows: `winget install ffmpeg`, e use o Git Bash para rodar o script.
-2. **Coloque os GIFs em `assets/gifs/`**, numerados na ordem em que devem aparecer:
+2. **Baixe os GIFs.** A lista fica em `assets/gifs/sources.txt`, no formato `nome  link-do-giphy`, e já vem com os 17 GIFs escolhidos. A ordem da lista é a ordem de exibição.
+   ```bash
+   ./scripts/fetch-gifs.sh
    ```
-   assets/gifs/01-chrollo.gif
-   assets/gifs/02-outro.gif
-   ```
+   O script salva `assets/gifs/01-zoro.gif`, `02-one-piece.gif`… Também dá para colocar um `.gif` direto na pasta, sem passar pela lista.
 3. **Gere o arquivo final:**
    ```bash
    ./scripts/build-gifs.sh
@@ -63,7 +64,16 @@ O que muda em relação à `readme-v2`:
    ```
 5. **Commit:** faça o commit da pasta `assets/gifs/` e do `assets/hero.gif`.
 
-Para adicionar ou remover um GIF depois, mexa na pasta, rode o script de novo e faça o commit.
+Para adicionar ou remover um GIF depois:
+1. edite o `sources.txt`;
+2. apague o `.gif` correspondente da pasta, se for o caso;
+3. rode `fetch-gifs.sh` e `build-gifs.sh`;
+4. faça o commit.
+
+> **Tamanho:** 17 GIFs × 10 s dão um `hero.gif` de 2min50s, que provavelmente vai passar de 10 MB e ficar pesado no README. Se o script avisar, escolha uma destas opções:
+> - menos qualidade: `FPS=10 COLORS=64 WIDTH=320 ./scripts/build-gifs.sh`;
+> - menos tempo por GIF: `SECONDS_EACH=5`;
+> - menos GIFs: comente linhas do `sources.txt` com `#` e apague os `.gif` delas.
 
 > Se o script avisar que o arquivo está grande (acima de ~9 MB), rode com `FPS=12 COLORS=64` ou `WIDTH=360`.
 
