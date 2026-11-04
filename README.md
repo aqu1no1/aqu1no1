@@ -1,4 +1,4 @@
-<img width="100%" src="assets/header.svg" alt="Mauricio Aquino — Software Engineer · Full Stack Developer" />
+<img width="100%" src="assets/banners/header.svg" alt="Mauricio Aquino — Software Engineer" />
 
 <div align="center">
 
@@ -6,7 +6,10 @@
 
 <br/>
 
-<img src="https://media.giphy.com/media/nbB1CV1fazlGo/giphy.gif" width="400" alt="Hunter x Hunter" />
+<!-- Rotação de GIFs (10 s cada). Depois de rodar scripts/build-gifs.sh, troque a linha do Giphy abaixo por:
+<img src="assets/hero.gif" width="400" alt="" />
+-->
+<img src="https://media.giphy.com/media/MszCRIaNuRVJkt6dso/giphy.gif" width="400" alt="Chrollo Lucilfer" />
 
 <br/>
 
@@ -18,7 +21,7 @@
 
 ---
 
-### <img src="assets/gif-azul.gif" width="28" /> About me
+### <img src="assets/icons/section.gif" width="28" /> About me
 
 Hi, I'm Mauricio.
 
@@ -29,19 +32,19 @@ Hi, I'm Mauricio.
 
 ---
 
-### <img src="assets/gif-azul.gif" width="28" /> Education
+### <img src="assets/icons/section.gif" width="28" /> Education
 
 <div align="center">
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
-<img src="assets/utfpr.svg" height="70" alt="UTFPR" />
+<img src="assets/logos/utfpr.svg" height="70" alt="UTFPR" />
 <h4>UTFPR · Federal University of Technology – Paraná</h4>
 <p><b>B.S. in Software Engineering</b></p>
 <p>Cornélio Procópio campus · currently in the 6th semester</p>
 </td>
 <td width="50%" align="center" valign="top">
-<img src="assets/etec-lauro-gomes.png" height="70" alt="Etec Lauro Gomes" />
+<img src="assets/logos/etec-lauro-gomes.png" height="70" alt="Etec Lauro Gomes" />
 <h4>Etec Lauro Gomes</h4>
 <p><b>Technical Degree in Mechatronics</b></p>
 <p>São Bernardo do Campo, SP</p>
@@ -58,7 +61,7 @@ Hi, I'm Mauricio.
 <table>
 <tr>
 <td align="center" valign="top">
-<img src="assets/neusa.png" height="90" alt="E.E. Profª Neusa Figueiredo Marçal" />
+<img src="assets/logos/neusa.png" height="90" alt="E.E. Profª Neusa Figueiredo Marçal" />
 <h4>E.E. Profª Neusa Figueiredo Marçal</h4>
 <p><b>Elementary and High School</b></p>
 <p>São Bernardo do Campo, SP</p>
@@ -71,19 +74,19 @@ Hi, I'm Mauricio.
 
 ---
 
-### <img src="assets/gif-azul.gif" width="28" /> Experience
+### <img src="assets/icons/section.gif" width="28" /> Experience
 
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
-<img src="assets/unect.svg" width="70" height="70" alt="Unect Jr." />
+<img src="assets/logos/unect.svg" width="70" height="70" alt="Unect Jr." />
 <h4>Unect Jr.</h4>
 <p><b>Backend Advisor</b></p>
 <p>Helped build systems for medical clinics, working on the API, business rules and database. I like to get ahead of problems and I'm always ready to help the team.</p>
 <img src="https://skillicons.dev/icons?i=nestjs,ts,postgres,docker&theme=dark" />
 </td>
 <td width="50%" align="center" valign="top">
-<img src="assets/g4tech.svg" width="70" height="70" alt="G4tech" />
+<img src="assets/logos/g4tech.svg" width="70" height="70" alt="G4tech" />
 <h4>G4tech</h4>
 <p><b>Junior Full Stack Developer</b></p>
 <p>Started as an intern and was promoted to junior developer. Worked on web and mobile projects and on the backend, from building interfaces to integrating APIs.</p>
@@ -94,57 +97,32 @@ Hi, I'm Mauricio.
 
 ---
 
-### <img src="assets/gif-azul.gif" width="28" /> Projects
+### <img src="assets/icons/section.gif" width="28" /> Projects
 
-<!-- Gerado automaticamente por .github/workflows/projects.yml a partir de projects.json -->
+<!-- Projetos em andamento. Gerado automaticamente por .github/workflows/projects.yml a partir de projects.json -->
 <div align="center">
 <!-- PROJECTS:START -->
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/currency-converter-app">currency-converter-app</a></h4>
-<p>Mobile app for currency conversion with historical rate charts and offline cache, powered by the currency-converter-api. Built with React Native and Expo.</p>
-<p><img src="https://img.shields.io/badge/android-1E40AF?style=flat-square" alt="android" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /> <img src="https://img.shields.io/badge/expo-1E40AF?style=flat-square" alt="expo" /> <img src="https://img.shields.io/badge/expo--router-1E40AF?style=flat-square" alt="expo-router" /> <img src="https://img.shields.io/badge/i18next-1E40AF?style=flat-square" alt="i18next" /> <img src="https://img.shields.io/badge/ios-1E40AF?style=flat-square" alt="ios" /> <img src="https://img.shields.io/badge/mobile--app-1E40AF?style=flat-square" alt="mobile-app" /> <img src="https://img.shields.io/badge/tanstack--query-1E40AF?style=flat-square" alt="tanstack-query" /> <img src="https://img.shields.io/badge/typescript-1E40AF?style=flat-square" alt="typescript" /></p>
-<img src="https://skillicons.dev/icons?i=ts,js,jest,react&theme=dark" height="32" />
-<p><sub>updated 5 days ago</sub></p>
-</td>
-<td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/currency-converter-web">currency-converter-web</a></h4>
-<p>Web app for currency conversion with historical rate charts, powered by the currency-converter-api. Built with React, Vite and TanStack Query.</p>
-<p><img src="https://img.shields.io/badge/apexcharts-1E40AF?style=flat-square" alt="apexcharts" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /> <img src="https://img.shields.io/badge/frontend-1E40AF?style=flat-square" alt="frontend" /> <img src="https://img.shields.io/badge/i18next-1E40AF?style=flat-square" alt="i18next" /> <img src="https://img.shields.io/badge/tanstack--query-1E40AF?style=flat-square" alt="tanstack-query" /> <img src="https://img.shields.io/badge/typescript-1E40AF?style=flat-square" alt="typescript" /> <img src="https://img.shields.io/badge/vitest-1E40AF?style=flat-square" alt="vitest" /> <img src="https://img.shields.io/badge/zod-1E40AF?style=flat-square" alt="zod" /></p>
-<img src="https://skillicons.dev/icons?i=ts,css,html,react,tailwind,vite&theme=dark" height="32" />
-<p><sub>updated 5 days ago</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/dotnet-task-manager-api">dotnet-task-manager-api</a></h4>
-<p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
-
-<img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 6 days ago</sub></p>
-</td>
-<td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/database-backup-utility">database-backup-utility</a></h4>
-<p>A cross-platform database backup and restore utility built with Rust, featuring a CLI, Tauri desktop app, automated scheduling, compression, and local/cloud storage support.</p>
-<p><img src="https://img.shields.io/badge/rust-1E40AF?style=flat-square" alt="rust" /></p>
-<img src="https://skillicons.dev/icons?i=rust,angular&theme=dark" height="32" />
-<p><sub>updated 6 days ago</sub></p>
-</td>
-</tr>
-</table>
 <!-- PROJECTS:END -->
 </div>
 
 ---
 
-### <img src="assets/gif-azul.gif" width="28" /> Tech Stack
+### <img src="assets/icons/section.gif" width="28" /> Finished Projects
+
+<div align="center">
+<!-- FINISHED:START -->
+<!-- FINISHED:END -->
+</div>
+
+---
+
+### <img src="assets/icons/section.gif" width="28" /> Tech Stack
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=ts&theme=dark" width="48" alt="ts" />&nbsp;
 <img src="https://skillicons.dev/icons?i=js&theme=dark" width="48" alt="js" />&nbsp;
 <img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" alt="react" />&nbsp;
-<img src="assets/expo.svg" width="48" alt="Expo" />&nbsp;
+<img src="assets/icons/expo.svg" width="48" alt="Expo" />&nbsp;
 <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" width="48" alt="nodejs" />&nbsp;
 <img src="https://skillicons.dev/icons?i=nestjs&theme=dark" width="48" alt="nestjs" />&nbsp;
 <img src="https://skillicons.dev/icons?i=express&theme=dark" width="48" alt="express" />&nbsp;
@@ -153,7 +131,7 @@ Hi, I'm Mauricio.
 <img src="https://skillicons.dev/icons?i=mongodb&theme=dark" width="48" alt="mongodb" />
 <br/>
 <img src="https://skillicons.dev/icons?i=prisma&theme=dark" width="48" alt="prisma" />&nbsp;
-<img src="assets/typeorm.svg" width="48" alt="TypeORM" />&nbsp;
+<img src="assets/icons/typeorm.svg" width="48" alt="TypeORM" />&nbsp;
 <img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" alt="docker" />&nbsp;
 <img src="https://skillicons.dev/icons?i=azure&theme=dark" width="48" alt="azure" />&nbsp;
 <img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="48" alt="githubactions" />&nbsp;
@@ -161,7 +139,7 @@ Hi, I'm Mauricio.
 <img src="https://skillicons.dev/icons?i=github&theme=dark" width="48" alt="github" />&nbsp;
 <img src="https://skillicons.dev/icons?i=linux&theme=dark" width="48" alt="linux" />&nbsp;
 <img src="https://skillicons.dev/icons?i=notion&theme=dark" width="48" alt="notion" />&nbsp;
-<img src="assets/linear.svg" width="48" alt="Linear" />
+<img src="assets/icons/linear.svg" width="48" alt="Linear" />
 </div>
 
 <br/>
@@ -178,7 +156,7 @@ Hi, I'm Mauricio.
 
 <h4>Frameworks</h4>
 <img src="https://skillicons.dev/icons?i=react,nodejs,express,nestjs&theme=dark" />
-<img src="assets/expo.svg" width="48" alt="Expo" />
+<img src="assets/icons/expo.svg" width="48" alt="Expo" />
 <p>React, React Native, Expo, Node.js, Express and NestJS</p>
 
 <h4>Databases</h4>
@@ -186,23 +164,23 @@ Hi, I'm Mauricio.
 
 <h4>ORMs</h4>
 <img src="https://skillicons.dev/icons?i=prisma&theme=dark" />
-<img src="assets/typeorm.svg" width="48" alt="TypeORM" />
+<img src="assets/icons/typeorm.svg" width="48" alt="TypeORM" />
 <p>Prisma and TypeORM</p>
 
 <h4>API Testing</h4>
-<img src="assets/api.svg" alt="Postman and Bruno" />
+<img src="assets/icons/api.svg" alt="Postman and Bruno" />
 <p>Postman and Bruno</p>
 
 <h4>Documentation</h4>
 <img src="https://skillicons.dev/icons?i=notion&theme=dark" />
-<img src="assets/linear.svg" width="48" alt="Linear" />
+<img src="assets/icons/linear.svg" width="48" alt="Linear" />
 <p>Notion and Linear</p>
 
 <h4>DevOps & Version Control</h4>
 <img src="https://skillicons.dev/icons?i=azure,githubactions,git,github&theme=dark" />
 
 <h4>Operating Systems</h4>
-<img src="assets/os.svg" alt="Linux, macOS and Windows" />
+<img src="assets/icons/os.svg" alt="Linux, macOS and Windows" />
 
 </div>
 
@@ -211,7 +189,7 @@ Hi, I'm Mauricio.
 
 ---
 
-### <img src="assets/gif-azul.gif" width="28" /> GitHub Stats
+### <img src="assets/icons/section.gif" width="28" /> GitHub Stats
 
 <div align="center">
 
@@ -226,4 +204,4 @@ Hi, I'm Mauricio.
 
 <br/><br/>
 
-<img width="100%" src="assets/footer.svg" alt="" />
+<img width="100%" src="assets/banners/footer.svg" alt="" />

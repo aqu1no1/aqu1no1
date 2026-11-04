@@ -1,21 +1,27 @@
-// Gera a seção "Projects" do README a partir do GitHub.
-// Lê projects.json, busca nome, descrição, tópicos e linguagens de cada repositório
-// e reescreve o trecho entre <!-- PROJECTS:START --> e <!-- PROJECTS:END -->.
+// Gera as seções de projetos do README a partir do GitHub.
 //
-// Uso local:   GITHUB_TOKEN=xxx node scripts/update-projects.mjs
+//   <!-- PROJECTS:START --> ... <!-- PROJECTS:END -->   → projetos em andamento ("current")
+//   <!-- FINISHED:START --> ... <!-- FINISHED:END -->   → projetos finalizados  ("finished")
+//
+// Lê projects.json, busca nome, descrição, tópicos e linguagens de cada repositório
+// e reescreve só o trecho entre os marcadores.
+//
+// Uso local:     GITHUB_TOKEN=xxx node scripts/update-projects.mjs
 // Teste offline: PROJECTS_FIXTURE=fixture.json node scripts/update-projects.mjs
+//                (fixture = { "current": [...], "finished": [...] })
 
 import { readFile, writeFile } from "node:fs/promises";
 
 const README = "README.md";
 const CONFIG = "projects.json";
-const START = "<!-- PROJECTS:START -->";
-const END = "<!-- PROJECTS:END -->";
 
 const token = process.env.GITHUB_TOKEN;
 const config = JSON.parse(await readFile(CONFIG, "utf8"));
 const user = config.user ?? process.env.GITHUB_REPOSITORY_OWNER ?? "aqu1no1";
-const limit = config.limit ?? 4;
+const currentCfg = config.current ?? { repos: config.repos ?? [], limit: config.limit ?? 4 };
+const finishedCfg = config.finished ?? { repos: [], limit: 4 };
+// tópicos que marcam um repositório como finalizado no modo automático
+const FINISHED_TOPICS = new Set(["finished", "completed", "done", "finalizado", "concluido"]);
 
 // linguagem do GitHub -> ícone do skillicons.dev
 const LANG_ICONS = {
@@ -26,11 +32,20 @@ const LANG_ICONS = {
 };
 // tópicos que também viram ícone (o resto vira tag)
 const TOPIC_ICONS = new Set([
-  "react", "nextjs", "nodejs", "nestjs", "express", "prisma", "postgres", "postgresql", "mysql",
-  "mongodb", "redis", "docker", "tailwind", "tailwindcss", "azure", "aws", "githubactions",
-  "graphql", "vite", "jest", "angular", "flutter", "firebase", "supabase", "vercel", "linux",
+  "react", "nextjs", "nodejs", "nestjs", "express", "prisma", "postgres", "mysql", "mongodb",
+  "redis", "docker", "tailwind", "azure", "aws", "githubactions", "graphql", "vite", "vitest",
+  "jest", "angular", "flutter", "firebase", "supabase", "vercel", "linux", "rust", "tauri",
+  "dotnet", "cs", "ts", "js", "py", "java", "kotlin", "go", "sass", "html", "css",
 ]);
-const TOPIC_ALIAS = { postgresql: "postgres", tailwindcss: "tailwind", "github-actions": "githubactions", "react-native": "react" };
+const TOPIC_ALIAS = {
+  postgresql: "postgres", tailwindcss: "tailwind", "github-actions": "githubactions",
+  "react-native": "react", typescript: "ts", javascript: "js", python: "py", csharp: "cs",
+  "aspnet-core": "dotnet", "asp-net-core": "dotnet", aspnetcore: "dotnet", "entity-framework-core": "dotnet",
+  node: "nodejs", "node-js": "nodejs", next: "nextjs", golang: "go", scss: "sass", html5: "html", css3: "css",
+};
+// máximo de tags (badges) por card; os tópicos que viram ícone não contam
+const MAX_TAGS = config.maxTags ?? 3;
+const MAX_ICONS = config.maxIcons ?? 8;
 
 async function gh(path) {
   const res = await fetch(`https://api.github.com/${path}`, {
@@ -49,25 +64,14 @@ async function loadRepo(fullName) {
   return { ...repo, languages: Object.keys(langs) };
 }
 
-async function collect() {
-  if (process.env.PROJECTS_FIXTURE) {
-    return JSON.parse(await readFile(process.env.PROJECTS_FIXTURE, "utf8"));
-  }
-  const listed = (config.repos ?? []).map((r) => (typeof r === "string" ? { repo: r } : r));
-  let entries = listed;
-  if (!entries.length) {
-    // modo automático: repositórios com push mais recente
-    const repos = await gh(`users/${user}/repos?sort=pushed&per_page=30&type=owner`);
-    entries = repos
-      .filter((r) => !r.fork && !r.archived && r.name !== user)
-      .slice(0, limit)
-      .map((r) => ({ repo: r.full_name }));
-  }
+const normalize = (list) => (list ?? []).map((r) => (typeof r === "string" ? { repo: r } : r));
+const isFinished = (r) => r.archived || (r.topics ?? []).some((t) => FINISHED_TOPICS.has(t));
+
+async function load(entries) {
   const out = [];
   for (const entry of entries) {
     try {
-      const data = await loadRepo(entry.repo);
-      out.push({ ...data, override: entry });
+      out.push({ ...(await loadRepo(entry.repo)), override: entry });
     } catch (err) {
       console.warn(`Pulando ${entry.repo}: ${err.message}`);
     }
@@ -75,9 +79,36 @@ async function collect() {
   return out;
 }
 
+async function collect() {
+  if (process.env.PROJECTS_FIXTURE) {
+    return JSON.parse(await readFile(process.env.PROJECTS_FIXTURE, "utf8"));
+  }
+  let current = normalize(currentCfg.repos);
+  let finished = normalize(finishedCfg.repos);
+
+  // modo automático para a lista que estiver vazia
+  if (!current.length || !finished.length) {
+    const mine = (await gh(`users/${user}/repos?sort=pushed&per_page=100&type=owner`))
+      .filter((r) => !r.fork && r.name !== user);
+    const listed = new Set([...current, ...finished].map((e) => e.repo.toLowerCase()));
+    const free = mine.filter((r) => !listed.has(r.full_name.toLowerCase()));
+    if (!finished.length) {
+      finished = free.filter(isFinished).slice(0, finishedCfg.limit ?? 4).map((r) => ({ repo: r.full_name }));
+    }
+    if (!current.length) {
+      const taken = new Set(finished.map((e) => e.repo.toLowerCase()));
+      current = free
+        .filter((r) => !isFinished(r) && !taken.has(r.full_name.toLowerCase()))
+        .slice(0, currentCfg.limit ?? 4)
+        .map((r) => ({ repo: r.full_name }));
+    }
+  }
+  return { current: await load(current), finished: await load(finished) };
+}
+
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-const badge = (label) =>
-  `<img src="https://img.shields.io/badge/${encodeURIComponent(label.replace(/-/g, "--").replace(/_/g, "__"))}-1E40AF?style=flat-square" alt="${esc(label)}" />`;
+const badge = (label, color = "1E40AF") =>
+  `<img src="https://img.shields.io/badge/${encodeURIComponent(label.replace(/-/g, "--").replace(/_/g, "__"))}-${color}?style=flat-square" alt="${esc(label)}" />`;
 
 function relative(dateStr) {
   const days = Math.floor((Date.now() - new Date(dateStr)) / 86400000);
@@ -85,61 +116,79 @@ function relative(dateStr) {
   if (days === 1) return "yesterday";
   if (days < 30) return `${days} days ago`;
   const months = Math.floor(days / 30);
-  return months === 1 ? "1 month ago" : `${months} months ago`;
+  if (months < 12) return months === 1 ? "1 month ago" : `${months} months ago`;
+  const years = Math.floor(months / 12);
+  return years === 1 ? "1 year ago" : `${years} years ago`;
 }
 
-function card(p) {
+function card(p, kind) {
   const o = p.override ?? {};
   const name = o.name ?? p.name;
   const url = o.url ?? (p.private ? null : p.html_url);
   const description = o.description ?? p.description ?? "No description yet.";
-  const topics = [...(p.topics ?? []), ...(o.tags ?? [])];
+  const topics = [...(p.topics ?? []), ...(o.tags ?? [])].filter((t) => !FINISHED_TOPICS.has(t));
 
   const icons = [];
   for (const l of p.languages ?? []) if (LANG_ICONS[l]) icons.push(LANG_ICONS[l]);
   const tags = [];
   for (const t of topics) {
     const id = TOPIC_ALIAS[t] ?? t;
-    if (TOPIC_ICONS.has(id) || TOPIC_ICONS.has(t)) icons.push(id);
+    if (TOPIC_ICONS.has(id)) icons.push(id);
     else tags.push(t);
   }
   for (const t of o.tech ?? []) icons.push(t);
-  const uniqueIcons = [...new Set(icons)].slice(0, 8);
+  const uniqueIcons = [...new Set(icons)].slice(0, MAX_ICONS);
+  // tags escolhidas no projects.json vêm primeiro e sempre aparecem
+  const shownTags = [...new Set([...(o.tags ?? []), ...tags])].slice(0, Math.max(MAX_TAGS, (o.tags ?? []).length));
 
   const title = url ? `<a href="${url}">${esc(name)}</a>` : esc(name);
-  const meta = [
-    o.role ? esc(o.role) : null,
-    p.private ? "🔒 private" : null,
-    p.pushed_at ? `updated ${relative(p.pushed_at)}` : null,
-  ].filter(Boolean).join(" · ");
+  const when =
+    kind === "finished"
+      ? o.finished ? `✅ finished ${esc(o.finished)}` : "✅ finished"
+      : p.pushed_at ? `updated ${relative(p.pushed_at)}` : null;
+  const meta = [o.role ? esc(o.role) : null, p.private ? "🔒 private" : null, when].filter(Boolean).join(" · ");
+  const extraLink = o.demo ? ` · <a href="${esc(o.demo)}">demo</a>` : "";
 
   return `<td width="50%" align="center" valign="top">
 <h4>${title}</h4>
 <p>${esc(description)}</p>
-${tags.length ? `<p>${tags.map(badge).join(" ")}</p>` : ""}
+${shownTags.length ? `<p>${shownTags.map((t) => badge(t)).join(" ")}</p>` : ""}
 ${uniqueIcons.length ? `<img src="https://skillicons.dev/icons?i=${uniqueIcons.join(",")}&theme=dark" height="32" />` : ""}
-${meta ? `<p><sub>${meta}</sub></p>` : ""}
+${meta ? `<p><sub>${meta}${extraLink}</sub></p>` : ""}
 </td>`;
 }
 
-function render(projects) {
-  if (!projects.length) return "<p align=\"center\"><i>No projects to show right now.</i></p>";
+function render(projects, kind) {
+  if (!projects.length) {
+    const msg = kind === "finished" ? "Finished projects will show up here soon." : "No projects to show right now.";
+    return `<p align="center"><i>${msg}</i></p>`;
+  }
   const rows = [];
   for (let i = 0; i < projects.length; i += 2) {
-    rows.push(`<tr>\n${card(projects[i])}\n${projects[i + 1] ? card(projects[i + 1]) : '<td width="50%"></td>'}\n</tr>`);
+    rows.push(`<tr>\n${card(projects[i], kind)}\n${projects[i + 1] ? card(projects[i + 1], kind) : '<td width="50%"></td>'}\n</tr>`);
   }
   return `<table>\n${rows.join("\n")}\n</table>`;
 }
 
-const projects = await collect();
+function replaceBlock(readme, name, html) {
+  const start = `<!-- ${name}:START -->`;
+  const end = `<!-- ${name}:END -->`;
+  const a = readme.indexOf(start);
+  const b = readme.indexOf(end);
+  if (a === -1 || b === -1) {
+    console.warn(`Marcadores ${start} / ${end} não encontrados no README — seção ignorada.`);
+    return readme;
+  }
+  return `${readme.slice(0, a + start.length)}\n${html}\n${readme.slice(b)}`;
+}
+
+const { current = [], finished = [] } = await collect();
 const readme = await readFile(README, "utf8");
-const a = readme.indexOf(START);
-const b = readme.indexOf(END);
-if (a === -1 || b === -1) throw new Error(`Marcadores ${START} / ${END} não encontrados no README`);
-const next = `${readme.slice(0, a + START.length)}\n${render(projects)}\n${readme.slice(b)}`;
+let next = replaceBlock(readme, "PROJECTS", render(current, "current"));
+next = replaceBlock(next, "FINISHED", render(finished, "finished"));
 if (next !== readme) {
   await writeFile(README, next);
-  console.log(`README atualizado com ${projects.length} projeto(s).`);
+  console.log(`README atualizado: ${current.length} em andamento, ${finished.length} finalizado(s).`);
 } else {
   console.log("Nada mudou.");
 }
