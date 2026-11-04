@@ -77,8 +77,7 @@ aqu1no1/
 
 ## Pendências
 
-- [ ] Rodar `./scripts/fetch-gifs.sh` e depois `./scripts/build-gifs.sh`. Ver se o `hero.gif` ficou abaixo de ~10 MB; se não, reduzir a qualidade ou a quantidade de GIFs.
-- [ ] Trocar a linha do Giphy no README pela de `assets/hero.gif`.
+- [x] Gerar o `hero.gif` com `SECONDS_EACH=4 FPS=10 COLORS=64 WIDTH=288 HEIGHT=162` (8,7 MB; com 10 s por GIF passava de 10 MB) e usá-lo no README.
 - [ ] Marcar os projetos finalizados: arquive o repo ou adicione o tópico `finished`, ou liste-os em `projects.json → finished`.
 - [ ] Trocar o link do badge **Portfolio** (`https://YOUR-PORTFOLIO-URL`).
 - [ ] Opcional: decidir se o typing SVG continua, já que repete o subtítulo do header.

@@ -62,7 +62,7 @@ O que muda em relação à `readme-v2`:
    ```html
    <img src="assets/hero.gif" width="400" alt="" />
    ```
-5. **Commit:** faça o commit da pasta `assets/gifs/` e do `assets/hero.gif`.
+5. **Commit:** faça o commit do `assets/hero.gif`. Os GIFs de origem ficam fora do Git (`.gitignore`) e podem ser baixados de novo com o `fetch-gifs.sh`.
 
 Para adicionar ou remover um GIF depois:
 1. edite o `sources.txt`;

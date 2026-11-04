@@ -6,10 +6,7 @@
 
 <br/>
 
-<!-- Rotação de GIFs (10 s cada). Depois de rodar scripts/build-gifs.sh, troque a linha do Giphy abaixo por:
 <img src="assets/hero.gif" width="400" alt="" />
--->
-<img src="https://media.giphy.com/media/MszCRIaNuRVJkt6dso/giphy.gif" width="400" alt="Chrollo Lucilfer" />
 
 <br/>
 
