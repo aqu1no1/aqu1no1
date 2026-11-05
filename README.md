@@ -106,14 +106,14 @@ Hi, I'm Mauricio.
 <p>Mobile app for currency conversion with historical rate charts and offline cache, powered by the currency-converter-api. Built with React Native and Expo.</p>
 <p><img src="https://img.shields.io/badge/android-1E40AF?style=flat-square" alt="android" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /></p>
 <img src="https://skillicons.dev/icons?i=ts,js,jest,react&theme=dark" height="32" />
-<p><sub>updated 5 days ago</sub></p>
+<p><sub>updated 6 days ago</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/currency-converter-web">currency-converter-web</a></h4>
 <p>Web app for currency conversion with historical rate charts, powered by the currency-converter-api. Built with React, Vite and TanStack Query.</p>
 <p><img src="https://img.shields.io/badge/apexcharts-1E40AF?style=flat-square" alt="apexcharts" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /></p>
 <img src="https://skillicons.dev/icons?i=ts,css,html,react,tailwind,vite,vitest&theme=dark" height="32" />
-<p><sub>updated 5 days ago</sub></p>
+<p><sub>updated 6 days ago</sub></p>
 </td>
 </tr>
 <tr>
@@ -122,7 +122,7 @@ Hi, I'm Mauricio.
 <p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
 
 <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 6 days ago</sub></p>
+<p><sub>updated 7 days ago</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/database-backup-utility">database-backup-utility</a></h4>
