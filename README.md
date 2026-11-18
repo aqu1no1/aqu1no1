@@ -106,7 +106,7 @@ Hi, I'm Mauricio.
 <p>A cross-platform database backup and restore utility built with Rust, featuring a CLI, Tauri desktop app, automated scheduling, compression, and local/cloud storage support.</p>
 
 <img src="https://skillicons.dev/icons?i=rust,ts,js,html,css,angular&theme=dark" height="32" />
-<p><sub>updated 3 days ago</sub></p>
+<p><sub>updated 4 days ago</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/currency-converter-app">currency-converter-app</a></h4>
