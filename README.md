@@ -113,7 +113,7 @@ Hi, I'm Mauricio.
 <p>Mobile app for currency conversion with historical rate charts and offline cache, powered by the currency-converter-api. Built with React Native and Expo.</p>
 <p><img src="https://img.shields.io/badge/android-1E40AF?style=flat-square" alt="android" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /></p>
 <img src="https://skillicons.dev/icons?i=ts,js,jest,react&theme=dark" height="32" />
-<p><sub>updated 18 days ago</sub></p>
+<p><sub>updated 19 days ago</sub></p>
 </td>
 </tr>
 <tr>
@@ -122,14 +122,14 @@ Hi, I'm Mauricio.
 <p>Web app for currency conversion with historical rate charts, powered by the currency-converter-api. Built with React, Vite and TanStack Query.</p>
 <p><img src="https://img.shields.io/badge/apexcharts-1E40AF?style=flat-square" alt="apexcharts" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /></p>
 <img src="https://skillicons.dev/icons?i=ts,css,html,react,tailwind,vite,vitest&theme=dark" height="32" />
-<p><sub>updated 18 days ago</sub></p>
+<p><sub>updated 19 days ago</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/dotnet-task-manager-api">dotnet-task-manager-api</a></h4>
 <p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
 
 <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 19 days ago</sub></p>
+<p><sub>updated 20 days ago</sub></p>
 </td>
 </tr>
 </table>
@@ -142,7 +142,18 @@ Hi, I'm Mauricio.
 
 <div align="center">
 <!-- FINISHED:START -->
-<p align="center"><i>Finished projects will show up here soon.</i></p>
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<h4><a href="https://github.com/aqu1no1/nest-url-shortener">nest-url-shortener</a></h4>
+<p>A URL shortening REST API built with NestJS, Prisma, and PostgreSQL, featuring database migrations, automated testing, and CI/CD.</p>
+<p><img src="https://img.shields.io/badge/backend-1E40AF?style=flat-square" alt="backend" /> <img src="https://img.shields.io/badge/nestjs--backend-1E40AF?style=flat-square" alt="nestjs-backend" /> <img src="https://img.shields.io/badge/prisma--orm-1E40AF?style=flat-square" alt="prisma-orm" /></p>
+<img src="https://skillicons.dev/icons?i=ts,js,nestjs,prisma,postgres&theme=dark" height="32" />
+<p><sub>✅ finished</sub></p>
+</td>
+<td width="50%"></td>
+</tr>
+</table>
 <!-- FINISHED:END -->
 </div>
 

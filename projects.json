@@ -8,7 +8,9 @@
 
   "finished": {
     "limit": 4,
-    "repos": []
+    "repos": [
+      { "repo": "aqu1no1/nest-url-shortener", "tech": ["nestjs", "prisma", "postgres"] }
+    ]
   },
 
   "_como_usar": "current = projetos em andamento (seção Projects). finished = projetos finalizados (seção Finished Projects). Lista vazia = modo automático: em 'finished' entram seus repos arquivados ou com o tópico 'finished'; em 'current' entram os repos com push mais recente que não estão finalizados. Ou liste os repos você mesmo, como nos exemplos. Só 'repo' é obrigatório.",
