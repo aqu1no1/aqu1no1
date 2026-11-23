@@ -45,9 +45,9 @@ Resumo do que foi decidido para o `aqu1no1/aqu1no1` (branch `readme-v3`, criada 
 - **Pasta de origem:** os GIFs ficam em `assets/gifs/`, numerados para definir a ordem.
 - **Lista:** os 17 GIFs escolhidos (Zoro, Luffy, Shanks, Hiei, Killua, Barba Negra, LeBron, Ja Morant…) estão em `assets/gifs/sources.txt`. O `scripts/fetch-gifs.sh` baixa todos do Giphy.
 - **Script local:** o `scripts/build-gifs.sh` junta todos num único **`assets/hero.gif`**:
-  - **10 s por GIF**, em loop infinito;
-  - um GIF mais curto repete até completar os 10 s, e um mais longo é cortado;
-  - todos ficam com 400 × 225 px.
+  - cada GIF toca **inteiro e na velocidade original** (mesmos tempos de quadro), e o próximo só entra quando ele termina; o conjunto fica em loop infinito;
+  - GIFs com menos de 3 s repetem o ciclo completo até passar de 3 s, para não piscarem (`MIN_SECONDS`);
+  - **qualidade máxima:** quadro de 480 × 270 px (resolução original dos GIFs), paleta de 256 cores própria para cada quadro, nada é cortado e as sobras (GIFs quadrados ou verticais) ficam transparentes.
 - **Sem pipeline:** você roda o script no seu computador quando adicionar ou remover um GIF e faz o commit do `hero.gif`. O único requisito é o **ffmpeg**.
 - **Por que não ler a pasta direto:** o README não roda código, e um SVG usado como imagem não pode carregar outros arquivos. Por isso os GIFs precisam virar um arquivo só.
 - **Enquanto o `hero.gif` não existe:** o README continua com o GIF do Giphy, e a linha para trocar já está comentada logo acima dele.
@@ -77,7 +77,7 @@ aqu1no1/
 
 ## Pendências
 
-- [x] Gerar o `hero.gif` com `SECONDS_EACH=4 FPS=10 COLORS=64 WIDTH=288 HEIGHT=162` (8,7 MB; com 10 s por GIF passava de 10 MB) e usá-lo no README.
+- [x] Gerar o `hero.gif` em qualidade máxima, com cada GIF inteiro e na velocidade original (1min42s, ~76 MB), e usá-lo no README com 480 px.
 - [ ] Marcar os projetos finalizados: arquive o repo ou adicione o tópico `finished`, ou liste-os em `projects.json → finished`.
 - [ ] Trocar o link do badge **Portfolio** (`https://YOUR-PORTFOLIO-URL`).
 - [ ] Opcional: decidir se o typing SVG continua, já que repete o subtítulo do header.

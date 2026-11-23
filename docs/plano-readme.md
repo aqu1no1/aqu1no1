@@ -38,7 +38,7 @@ O que muda em relação à `readme-v2`:
 | `scripts/fetch-gifs.sh` + `assets/gifs/sources.txt` | Novo: baixa do Giphy os GIFs listados |
 | `.github/workflows/*` | Sem mudanças |
 
-## 3. GIFs (rotação de 10 s, sem pipeline)
+## 3. GIFs (um depois do outro, sem pipeline)
 
 1. **Instale o ffmpeg:**
    - Linux: `sudo apt install ffmpeg`
@@ -53,7 +53,7 @@ O que muda em relação à `readme-v2`:
    ```bash
    ./scripts/build-gifs.sh
    ```
-   É possível ajustar com variáveis, por exemplo `SECONDS_EACH=8 WIDTH=480 HEIGHT=270 ./scripts/build-gifs.sh`.
+   Cada GIF toca inteiro, na velocidade original, e depois vem o próximo. É possível ajustar com variáveis, por exemplo `MIN_SECONDS=0 WIDTH=480 HEIGHT=270 ./scripts/build-gifs.sh`.
 4. **Troque a linha no README.** A linha do Giphy:
    ```html
    <img src="https://media.giphy.com/media/MszCRIaNuRVJkt6dso/giphy.gif" width="400" alt="Chrollo Lucilfer" />
@@ -70,12 +70,7 @@ Para adicionar ou remover um GIF depois:
 3. rode `fetch-gifs.sh` e `build-gifs.sh`;
 4. faça o commit.
 
-> **Tamanho:** 17 GIFs × 10 s dão um `hero.gif` de 2min50s, que provavelmente vai passar de 10 MB e ficar pesado no README. Se o script avisar, escolha uma destas opções:
-> - menos qualidade: `FPS=10 COLORS=64 WIDTH=320 ./scripts/build-gifs.sh`;
-> - menos tempo por GIF: `SECONDS_EACH=5`;
-> - menos GIFs: comente linhas do `sources.txt` com `#` e apague os `.gif` delas.
-
-> Se o script avisar que o arquivo está grande (acima de ~9 MB), rode com `FPS=12 COLORS=64` ou `WIDTH=360`.
+> **Tamanho:** em qualidade máxima, os 17 GIFs dão um `hero.gif` de ~1min42s e ~76 MB (o limite do GitHub por arquivo é 100 MB). Para deixar mais leve, use menos GIFs: comente linhas do `sources.txt` com `#` e apague os `.gif` delas.
 
 ## 4. Projetos
 
