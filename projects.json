@@ -2,13 +2,16 @@
   "user": "aqu1no1",
 
   "current": {
-    "limit": 4,
+    "limit": 2,
     "repos": []
   },
 
   "finished": {
     "limit": 4,
     "repos": [
+      "aqu1no1/currency-converter-api",
+      "aqu1no1/currency-converter-web",
+      "aqu1no1/currency-converter-app",
       { "repo": "aqu1no1/nest-url-shortener", "tech": ["nestjs", "prisma", "postgres"] }
     ]
   },
