@@ -113,7 +113,7 @@ Hi, I'm Mauricio.
 <p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
 
 <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 27 days ago</sub></p>
+<p><sub>updated 28 days ago</sub></p>
 </td>
 </tr>
 </table>
