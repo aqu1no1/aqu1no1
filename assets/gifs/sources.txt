@@ -18,3 +18,11 @@
 15-nba          https://giphy.com/gifs/26vUGuV1WxhbkEKZy
 16-ja-morant    https://giphy.com/gifs/nba-12-memphis-grizzlies-ja-morant-mWOhSN7Lmfj91LxHvG
 17-lebron-kyrie https://giphy.com/gifs/nba-lebron-james-cleveland-cavaliers-kyrie-irving-xTiTni5jF3Wtw3SaFG
+18-pirate-king  https://giphy.com/gifs/king-aura-the-pirate-LCijfi5hHS6WyIWy8V
+19-zoro-2       https://giphy.com/gifs/one-piece-tybwaizen-roronoa-zoro-skcUyyGqdVErXLHZyW
+20-sword-edit   https://giphy.com/gifs/badass-sword-anime-edit-U8fhZ6bL4gm0eZ7NJH
+21-giphy        https://giphy.com/gifs/u4qScjs878Mg8U14tZ
+22-zoro-3       https://giphy.com/gifs/one-piece-zoro-numbam-7BdsltB9K0IocuL1C8
+23-zoro-4       https://giphy.com/gifs/one-piece-zoro-roronoa-SUREsnI6v55CM
+24-op-graphics  https://giphy.com/gifs/one-piece-op-opgraphics-9JlGGWL8bHt1S
+25-giphy-2      https://giphy.com/gifs/FhXGEDwN6BWCFUgHh7
