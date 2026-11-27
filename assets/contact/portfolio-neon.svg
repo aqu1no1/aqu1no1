@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160.8" height="46" viewBox="0 0 160.8 46">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b2e1a"/><stop offset="1" stop-color="#020617"/></linearGradient>
+<filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="2.4"/></filter>
+</defs>
+<style>.pulse{animation:p 2.8s ease-in-out infinite}@keyframes p{0%,100%{opacity:.25}50%{opacity:.9}}@media (prefers-reduced-motion:reduce){.pulse{animation:none;opacity:.5}}</style>
+<rect class="pulse" x="3" y="3" width="154.8" height="40" rx="20" fill="none" stroke="#4ADE80" stroke-width="3" filter="url(#glow)"/>
+<rect x="3" y="3" width="154.8" height="40" rx="20" fill="url(#bg)" stroke="#4ADE80" stroke-width="1.5"/>
+<svg x="22" y="13" width="20" height="20" viewBox="0 0 24 24" color="#4ADE80"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4.2" ry="10"/><path d="M2 12h20M4 7h16M4 17h16"/></g></svg>
+<text x="52" y="28.5" fill="#DCFCE7" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing=".4">Portfolio</text>
+</svg>

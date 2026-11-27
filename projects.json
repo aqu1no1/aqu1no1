@@ -9,14 +9,21 @@
   "finished": {
     "limit": 4,
     "repos": [
-      "aqu1no1/currency-converter-api",
-      "aqu1no1/currency-converter-web",
-      "aqu1no1/currency-converter-app",
+      {
+        "name": "Currency Converter",
+        "description": "Full currency conversion platform with daily exchange rates since 2000: a NestJS REST API, a React web app and a React Native mobile app with historical rate charts.",
+        "tags": ["currency-converter", "exchange-rates", "cron"],
+        "repos": [
+          { "repo": "aqu1no1/currency-converter-api", "label": "🔌 API" },
+          { "repo": "aqu1no1/currency-converter-web", "label": "🌐 Web" },
+          { "repo": "aqu1no1/currency-converter-app", "label": "📱 App" }
+        ]
+      },
       { "repo": "aqu1no1/nest-url-shortener", "tech": ["nestjs", "prisma", "postgres"] }
     ]
   },
 
-  "_como_usar": "current = projetos em andamento (seção Projects). finished = projetos finalizados (seção Finished Projects). Lista vazia = modo automático: em 'finished' entram seus repos arquivados ou com o tópico 'finished'; em 'current' entram os repos com push mais recente que não estão finalizados. Ou liste os repos você mesmo, como nos exemplos. Só 'repo' é obrigatório.",
+  "_como_usar": "current = projetos em andamento (seção Projects). finished = projetos finalizados (seção Finished Projects). Lista vazia = modo automático: em 'finished' entram seus repos arquivados ou com o tópico 'finished'; em 'current' entram os repos com push mais recente que não estão finalizados. Ou liste os repos você mesmo, como nos exemplos. Só 'repo' é obrigatório. Para juntar vários repos num card só, use 'name' + 'repos' (cada um com 'repo' e um 'label' opcional).",
   "_exemplos": {
     "current": [
       "aqu1no1/meu-projeto",

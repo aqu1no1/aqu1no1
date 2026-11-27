@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=2500&pause=1500&color=58A6FF&center=true&vCenter=true&width=500&lines=Software+Engineer.;Full+Stack+Developer.;TypeScript+enthusiast." />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=2500&pause=1500&color=4ADE80&center=true&vCenter=true&width=500&lines=Software+Engineer.;Full+Stack+Developer.;TypeScript+enthusiast." />
 
 <br/>
 
@@ -10,9 +10,9 @@
 
 <br/>
 
-<a href="https://www.linkedin.com/in/aqu1nodev/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF" /></a>
-<a href="mailto:aquinomauricio101@gmail.com"><img src="https://img.shields.io/badge/Gmail-0D1117?style=for-the-badge&logo=gmail&logoColor=58A6FF" /></a>
-<a href="https://YOUR-PORTFOLIO-URL" target="_blank"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=58A6FF" /></a>
+<a href="https://www.linkedin.com/in/aqu1nodev/" target="_blank"><img src="assets/contact/linkedin-neon.svg" height="46" alt="LinkedIn" /></a>
+<a href="mailto:aquinomauricio101@gmail.com"><img src="assets/contact/gmail-neon.svg" height="46" alt="Gmail" /></a>
+<a href="https://YOUR-PORTFOLIO-URL" target="_blank"><img src="assets/contact/portfolio-neon.svg" height="46" alt="Portfolio" /></a>
 
 </div>
 
@@ -25,7 +25,9 @@ Hi, I'm Mauricio.
 - 6th-semester **Software Engineering** student at **UTFPR** (Cornélio Procópio campus).
 - **Full stack** developer, mostly working with **TypeScript**.
 - I enjoy following a project all the way from the database to the screen.
-- Currently at **Unect Jr.** and **G4tech**, and contributing to the **TEDI** project (web app, API and documentation).
+- Currently at **Unect Jr.** and **G4tech**.
+- Starting in **2027.1**, I'll be the **Development Manager** at **Unect Jr.**
+- Currently studying **Data Structures** and **System Design**.
 
 ---
 
@@ -45,6 +47,8 @@ Hi, I'm Mauricio.
 <h4>Etec Lauro Gomes</h4>
 <p><b>Technical Degree in Mechatronics</b></p>
 <p>São Bernardo do Campo, SP</p>
+<p><sub>PROJECTS</sub></p>
+<a href="https://github.com/aqu1no1/hovercraft-etec"><img src="https://img.shields.io/badge/hovercraft--etec-0D1117?style=for-the-badge&logo=github&logoColor=4ADE80" alt="hovercraft-etec" /></a>
 </td>
 </tr>
 </table>
@@ -79,6 +83,7 @@ Hi, I'm Mauricio.
 <img src="assets/logos/unect.svg" width="70" height="70" alt="Unect Jr." />
 <h4>Unect Jr.</h4>
 <p><b>Backend Advisor</b></p>
+<p>🚀 <b>Next cycle (2027.1):</b> Development Manager</p>
 <p>Helped build systems for medical clinics, working on the API, business rules and database. I like to get ahead of problems and I'm always ready to help the team.</p>
 <img src="https://skillicons.dev/icons?i=nestjs,ts,postgres,docker&theme=dark" />
 </td>
@@ -106,14 +111,14 @@ Hi, I'm Mauricio.
 <p>A cross-platform database backup and restore utility built with Rust, featuring a CLI, Tauri desktop app, automated scheduling, compression, and local/cloud storage support.</p>
 
 <img src="https://skillicons.dev/icons?i=rust,ts,html,css,js,angular&theme=dark" height="32" />
-<p><sub>updated today</sub></p>
+<p><sub>updated yesterday</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/dotnet-task-manager-api">dotnet-task-manager-api</a></h4>
 <p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
 
 <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 28 days ago</sub></p>
+<p><sub>updated 29 days ago</sub></p>
 </td>
 </tr>
 </table>
@@ -126,40 +131,31 @@ Hi, I'm Mauricio.
 
 <div align="center">
 <!-- FINISHED:START -->
+<details>
+<summary><b>See finished projects (2 projects)</b></summary>
+<br/>
+
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/currency-converter-api">currency-converter-api</a></h4>
-<p>REST API for currency conversion with daily exchange rates since 2000, synced from Frankfurter. Built with NestJS, PostgreSQL and TypeORM.</p>
-<p><img src="https://img.shields.io/badge/cron-1E40AF?style=flat-square" alt="cron" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /></p>
-<img src="https://skillicons.dev/icons?i=ts,docker,nestjs,nodejs,postgres,vitest&theme=dark" height="32" />
-<p><sub>✅ finished</sub></p>
-</td>
-<td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/currency-converter-web">currency-converter-web</a></h4>
-<p>Web app for currency conversion with historical rate charts, powered by the currency-converter-api. Built with React, Vite and TanStack Query.</p>
-<p><img src="https://img.shields.io/badge/apexcharts-1E40AF?style=flat-square" alt="apexcharts" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /></p>
-<img src="https://skillicons.dev/icons?i=ts,css,html,react,tailwind,vite,vitest&theme=dark" height="32" />
-<p><sub>✅ finished</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<h4><a href="https://github.com/aqu1no1/currency-converter-app">currency-converter-app</a></h4>
-<p>Mobile app for currency conversion with historical rate charts and offline cache, powered by the currency-converter-api. Built with React Native and Expo.</p>
-<p><img src="https://img.shields.io/badge/android-1E40AF?style=flat-square" alt="android" /> <img src="https://img.shields.io/badge/currency--converter-1E40AF?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-1E40AF?style=flat-square" alt="exchange-rates" /></p>
-<img src="https://skillicons.dev/icons?i=ts,js,jest,react&theme=dark" height="32" />
+<h4>Currency Converter</h4>
+<p>Full currency conversion platform with daily exchange rates since 2000: a NestJS REST API, a React web app and a React Native mobile app with historical rate charts.</p>
+<p><a href="https://github.com/aqu1no1/currency-converter-api"><b>🔌 API</b></a> &nbsp;·&nbsp; <a href="https://github.com/aqu1no1/currency-converter-web"><b>🌐 Web</b></a> &nbsp;·&nbsp; <a href="https://github.com/aqu1no1/currency-converter-app"><b>📱 App</b></a></p>
+<p><img src="https://img.shields.io/badge/currency--converter-15803D?style=flat-square" alt="currency-converter" /> <img src="https://img.shields.io/badge/exchange--rates-15803D?style=flat-square" alt="exchange-rates" /> <img src="https://img.shields.io/badge/cron-15803D?style=flat-square" alt="cron" /></p>
+<img src="https://skillicons.dev/icons?i=ts,docker,css,html,js,nestjs,nodejs,postgres&theme=dark" height="32" />
 <p><sub>✅ finished</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/nest-url-shortener">nest-url-shortener</a></h4>
 <p>A URL shortening REST API built with NestJS, Prisma, and PostgreSQL, featuring database migrations, automated testing, and CI/CD.</p>
-<p><img src="https://img.shields.io/badge/backend-1E40AF?style=flat-square" alt="backend" /> <img src="https://img.shields.io/badge/nestjs--backend-1E40AF?style=flat-square" alt="nestjs-backend" /> <img src="https://img.shields.io/badge/prisma--orm-1E40AF?style=flat-square" alt="prisma-orm" /></p>
+<p><img src="https://img.shields.io/badge/backend-15803D?style=flat-square" alt="backend" /> <img src="https://img.shields.io/badge/nestjs--backend-15803D?style=flat-square" alt="nestjs-backend" /> <img src="https://img.shields.io/badge/prisma--orm-15803D?style=flat-square" alt="prisma-orm" /></p>
 <img src="https://skillicons.dev/icons?i=ts,js,nestjs,prisma,postgres&theme=dark" height="32" />
 <p><sub>✅ finished</sub></p>
 </td>
 </tr>
 </table>
+
+</details>
 <!-- FINISHED:END -->
 </div>
 
@@ -242,7 +238,7 @@ Hi, I'm Mauricio.
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=aqu1no1&background=0D1117&border=30363D&stroke=30363D&ring=1E40AF&fire=1E40AF&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681&locale=en" />
+<img src="https://streak-stats.demolab.com?user=aqu1no1&background=0D1117&border=30363D&stroke=30363D&ring=15803D&fire=4ADE80&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=4ADE80&sideLabels=8B949E&dates=6E7681&locale=en" />
 
 <img src="profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub contributions" width="100%" />
 

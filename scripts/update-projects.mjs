@@ -3,6 +3,8 @@
 //   <!-- PROJECTS:START --> ... <!-- PROJECTS:END -->   → projetos em andamento ("current")
 //   <!-- FINISHED:START --> ... <!-- FINISHED:END -->   → projetos finalizados  ("finished")
 //
+// Um item com "repos" (em vez de "repo") vira um card só, com um link para cada repositório.
+//
 // Lê projects.json, busca nome, descrição, tópicos e linguagens de cada repositório
 // e reescreve só o trecho entre os marcadores.
 //
@@ -46,6 +48,7 @@ const TOPIC_ALIAS = {
 // máximo de tags (badges) por card; os tópicos que viram ícone não contam
 const MAX_TAGS = config.maxTags ?? 3;
 const MAX_ICONS = config.maxIcons ?? 8;
+const TAG_COLOR = config.tagColor ?? "15803D";
 
 async function gh(path) {
   const res = await fetch(`https://api.github.com/${path}`, {
@@ -65,15 +68,39 @@ async function loadRepo(fullName) {
 }
 
 const normalize = (list) => (list ?? []).map((r) => (typeof r === "string" ? { repo: r } : r));
+const repoNames = (e) => (e.repos ? normalize(e.repos) : [e]).map((x) => x.repo.toLowerCase());
 const isFinished = (r) => r.archived || (r.topics ?? []).some((t) => FINISHED_TOPICS.has(t));
+
+async function loadGroup(entry) {
+  const parts = [];
+  for (const part of normalize(entry.repos)) {
+    try {
+      parts.push({ ...(await loadRepo(part.repo)), label: part.label });
+    } catch (err) {
+      console.warn(`Pulando ${part.repo}: ${err.message}`);
+    }
+  }
+  if (!parts.length) throw new Error("nenhum repositório do grupo foi encontrado");
+  const latest = parts.map((r) => r.pushed_at).filter(Boolean).sort().at(-1);
+  return {
+    name: entry.name,
+    description: parts[0].description,
+    topics: [...new Set(parts.flatMap((r) => r.topics ?? []))],
+    languages: [...new Set(parts.flatMap((r) => r.languages ?? []))],
+    pushed_at: latest,
+    private: parts.every((r) => r.private),
+    links: parts.map((r) => ({ label: r.label ?? r.name, url: r.private ? null : r.html_url })),
+  };
+}
 
 async function load(entries) {
   const out = [];
   for (const entry of entries) {
     try {
-      out.push({ ...(await loadRepo(entry.repo)), override: entry });
+      const data = entry.repos ? await loadGroup(entry) : await loadRepo(entry.repo);
+      out.push({ ...data, override: entry });
     } catch (err) {
-      console.warn(`Pulando ${entry.repo}: ${err.message}`);
+      console.warn(`Pulando ${entry.repo ?? entry.name}: ${err.message}`);
     }
   }
   return out;
@@ -90,13 +117,13 @@ async function collect() {
   if (!current.length || !finished.length) {
     const mine = (await gh(`users/${user}/repos?sort=pushed&per_page=100&type=owner`))
       .filter((r) => !r.fork && r.name !== user);
-    const listed = new Set([...current, ...finished].map((e) => e.repo.toLowerCase()));
+    const listed = new Set([...current, ...finished].flatMap(repoNames));
     const free = mine.filter((r) => !listed.has(r.full_name.toLowerCase()));
     if (!finished.length) {
       finished = free.filter(isFinished).slice(0, finishedCfg.limit ?? 4).map((r) => ({ repo: r.full_name }));
     }
     if (!current.length) {
-      const taken = new Set(finished.map((e) => e.repo.toLowerCase()));
+      const taken = new Set(finished.flatMap(repoNames));
       current = free
         .filter((r) => !isFinished(r) && !taken.has(r.full_name.toLowerCase()))
         .slice(0, currentCfg.limit ?? 4)
@@ -107,7 +134,7 @@ async function collect() {
 }
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-const badge = (label, color = "1E40AF") =>
+const badge = (label, color = TAG_COLOR) =>
   `<img src="https://img.shields.io/badge/${encodeURIComponent(label.replace(/-/g, "--").replace(/_/g, "__"))}-${color}?style=flat-square" alt="${esc(label)}" />`;
 
 function relative(dateStr) {
@@ -124,7 +151,7 @@ function relative(dateStr) {
 function card(p, kind) {
   const o = p.override ?? {};
   const name = o.name ?? p.name;
-  const url = o.url ?? (p.private ? null : p.html_url);
+  const url = o.url ?? (p.links || p.private ? null : p.html_url);
   const description = o.description ?? p.description ?? "No description yet.";
   const topics = [...(p.topics ?? []), ...(o.tags ?? [])].filter((t) => !FINISHED_TOPICS.has(t));
 
@@ -148,11 +175,14 @@ function card(p, kind) {
       : p.pushed_at ? `updated ${relative(p.pushed_at)}` : null;
   const meta = [o.role ? esc(o.role) : null, p.private ? "🔒 private" : null, when].filter(Boolean).join(" · ");
   const extraLink = o.demo ? ` · <a href="${esc(o.demo)}">demo</a>` : "";
+  const links = p.links
+    ? `<p>${p.links.map((l) => (l.url ? `<a href="${l.url}"><b>${esc(l.label)}</b></a>` : `<b>${esc(l.label)}</b>`)).join(" &nbsp;·&nbsp; ")}</p>\n`
+    : "";
 
   return `<td width="50%" align="center" valign="top">
 <h4>${title}</h4>
 <p>${esc(description)}</p>
-${shownTags.length ? `<p>${shownTags.map((t) => badge(t)).join(" ")}</p>` : ""}
+${links}${shownTags.length ? `<p>${shownTags.map((t) => badge(t)).join(" ")}</p>` : ""}
 ${uniqueIcons.length ? `<img src="https://skillicons.dev/icons?i=${uniqueIcons.join(",")}&theme=dark" height="32" />` : ""}
 ${meta ? `<p><sub>${meta}${extraLink}</sub></p>` : ""}
 </td>`;
@@ -167,7 +197,10 @@ function render(projects, kind) {
   for (let i = 0; i < projects.length; i += 2) {
     rows.push(`<tr>\n${card(projects[i], kind)}\n${projects[i + 1] ? card(projects[i + 1], kind) : '<td width="50%"></td>'}\n</tr>`);
   }
-  return `<table>\n${rows.join("\n")}\n</table>`;
+  const table = `<table>\n${rows.join("\n")}\n</table>`;
+  if (kind !== "finished") return table;
+  const count = projects.length === 1 ? "1 project" : `${projects.length} projects`;
+  return `<details>\n<summary><b>See finished projects (${count})</b></summary>\n<br/>\n\n${table}\n\n</details>`;
 }
 
 function replaceBlock(readme, name, html) {

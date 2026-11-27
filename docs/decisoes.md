@@ -1,12 +1,14 @@
 # Decisões do README de perfil
 
-Resumo do que foi decidido para o `aqu1no1/aqu1no1` (branch `readme-v3`, criada a partir da `readme-v2`).
+Resumo do que foi decidido para o `aqu1no1/aqu1no1` (branch `readme-v4`, criada a partir da `readme-v3`, que veio da `readme-v2`).
 
 ## Visual
 
 | Item | Decisão |
 |---|---|
-| Tema | **Azul escuro**. Fundo de `#0b1d51` a `#020617`, com destaques em `#58a6ff` / `#1E40AF` |
+| Tema | **Verde** (v4). Header, footer, ícone de seção, tags dos projetos, subtítulo e streak em `#4ADE80` / `#15803D`. A v3 era azul escuro |
+| Contato | Botões **neon** próprios em `assets/contact/` (LinkedIn, Gmail, Portfolio), no lugar dos badges do shields.io |
+| Hero GIF | Por enquanto só os trechos do Zoro. A versão final vai ter os 10 GIFs do Zoro da nova lista |
 | Header (`assets/banners/header.svg`) | SVG animado com estrelas, galáxias espirais, nebulosa, ondas de luz e buraco negro à direita |
 | Animação do subtítulo | **SWE → SOFTWARE ENGINEER**, e depois volta para SWE. Ciclo de 10 s, sem "Full Stack Developer" |
 | Footer (`assets/banners/footer.svg`) | Mesmo estilo do header, com buraco negro no centro e galáxias nas laterais |
@@ -19,7 +21,7 @@ Resumo do que foi decidido para o `aqu1no1/aqu1no1` (branch `readme-v3`, criada 
 | Education | UTFPR e Etec em destaque. Um **"See earlier education"** recolhível mostra a **E.E. Profª Neusa Figueiredo Marçal**, com o logo da escola |
 | Experience | Unect Jr. e G4tech lado a lado, sem mudanças |
 | Projects | **Projetos em andamento**, na tabela HTML de 2 colunas (versão 1) |
-| Finished Projects | Seção nova, logo abaixo de Projects, com os **projetos finalizados** |
+| Finished Projects | Logo abaixo de Projects, **recolhível** ("See finished projects"). Os 3 repos do Currency Converter (API, Web, App) viram **um card só** |
 | Tech Stack | **Grade centralizada 2 × 10**, com todos os ícones do mesmo tamanho. O "See full stack" fica centralizado embaixo |
 | GitHub Stats | Streak, card de contribuições em largura total, e "Top Languages by Repo" + "Stats" lado a lado |
 
