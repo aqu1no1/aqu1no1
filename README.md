@@ -6,7 +6,7 @@
 
 <br/>
 
-<img src="assets/hero.gif" width="360" alt="" />
+<img src="assets/hero.gif" width="480" alt="" />
 
 <br/>
 
