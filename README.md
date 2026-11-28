@@ -111,14 +111,14 @@ Hi, I'm Mauricio.
 <p>A cross-platform database backup and restore utility built with Rust, featuring a CLI, Tauri desktop app, automated scheduling, compression, and local/cloud storage support.</p>
 
 <img src="https://skillicons.dev/icons?i=rust,ts,html,css,js,angular&theme=dark" height="32" />
-<p><sub>updated yesterday</sub></p>
+<p><sub>updated today</sub></p>
 </td>
 <td width="50%" align="center" valign="top">
 <h4><a href="https://github.com/aqu1no1/dotnet-task-manager-api">dotnet-task-manager-api</a></h4>
 <p>RESTful task management API built with ASP.NET Core, Entity Framework Core, and PostgreSQL.</p>
 
 <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="32" />
-<p><sub>updated 29 days ago</sub></p>
+<p><sub>updated 1 month ago</sub></p>
 </td>
 </tr>
 </table>
